@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TechDen Style Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Product Sans Alternative -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="scrollable"></body>
+
+<section class="hero">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <div class="logo-container">
+          <div class="logo-icon">
+            <img src="./images/logo.png" alt="" srcset="">
+          </div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link hover-box" href="#">Home</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-contact">Contact us</a>
+          <a href="#" class="btn btn-donate">Donate</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO TEXT -->
+  <div class="hero-content">
+    <h1 class="heading-xl text-white">Where Innovation Meets Opportunity</h1>
+    <p class="text-lg text-white">
+      TechDen USA is a leading innovation hub empowering startups
+      to prototype, build, and scale breakthrough technologies.
+    </p>
+
+    <div class="hero-buttons mt-4">
+      <a href="#" class="btn-primary-custom">Join The Program</a>
+      <a href="#" class="btn-outline-custom">Explore Our Startups <span>&#8599;</span></a>
+    </div>
+  </div>
+
+</section>
+
+<!-- STARTUPS SECTION -->
+<section class="startups-section py-5">
+  <div class="container-fluid">
+    <div class="text-center spacing-xl">
+      <h2 class="section-heading heading-xl spacing-sm">Startups That Began Here</h2>
+      <p class="section-description text-lg spacing-lg">We're proud to have supported startups that are shaping the
+        future of
+        technology.</p>
+      <a href="#" class="btn-primary-custom">View All Success Stories <span>&#8599;</span></a>
+    </div>
+
+    <div class="row g-4">
+      <!-- Slack Card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="startup-card">
+          <div class="startup-image slack-bg">
+            <div class="geometric-shapes">
+              <img src="./images/start1.png">
+            </div>
+          </div>
+          <div class="startup-content">
+            <div class="startup-logo">
+              <img src="./images/icon/slack.png" alt="" srcset="">
+            </div>
+            <h3 class="heading-md text-primary">Slack</h3>
+            <p class="text-sm text-secondary">Lorem ipsum dignissim nisl tortor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Microsoft Card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="startup-card">
+          <div class="startup-image microsoft-bg">
+            <div class="geometric-shapes">
+              <img src="./images/start2.png">
+            </div>
+          </div>
+          <div class="startup-content">
+            <div class="startup-logo">
+              <img src="./images/icon/microsoft.png" alt="" srcset="">
+            </div>
+            <h3 class="heading-md text-primary">Microsoft</h3>
+            <p class="text-sm text-secondary">Lorem ipsum dignissim nisl tortor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deloitte Card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="startup-card">
+          <div class="startup-image deloitte-bg">
+            <div class="geometric-shapes">
+              <img src="./images/start3.png">
+            </div>
+          </div>
+          <div class="startup-content">
+            <div class="startup-logo">
+              <img src="./images/icon/delottie.png" alt="" srcset="">
+            </div>
+            <h3 class="heading-md text-primary">Deloitte</h3>
+            <p class="text-sm text-secondary">Lorem ipsum dignissim nisl tortor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STARTUP INSIGHTS & SUCCESS STORIES SECTION -->
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-section-header">
+      <h2 class="section-heading blog-section-title">Startup Insights & Success Stories</h2>
+      <p class="section-description text-lg spacing-lg">
+        Explore the latest trends, founder journeys, innovation tips, and news from
+        the world of emerging technology—all powered by the TechDen community.
+      </p>
+    </div>
+
+    <!-- Blog Slider Container -->
+    <div class="blog-slider-container">
+      <div class="blog-slider-wrapper">
+        <div class="blog-slider-track" id="blogSliderTrack">
+
+          <!-- Slide 1 -->
+          <div class="blog-slide">
+            <div class="blog-grid-container">
+              <div class="blog-grid-item">
+                <div class="blog-card">
+                  <div class="blog-image-container">
+                    <img src="./images/start4.png" alt="Innovation Potential">
+                  </div>
+                  <span class="blog-category-tag">How to Maximize Your Startup's Innovation Potential</span>
+                  <h3 class="blog-title">
+                    Discover actionable strategies for founders to harness creativity and turn ideas into prototyped
+                    solutions in a modern incubator environment.
+                  </h3>
+                  <div class="blog-footer">
+                    <div class="blog-meta">
+                      <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
+                      <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
+                    </div>
+                    <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-grid-item">
+                <div class="blog-card">
+                  <div class="blog-image-container">
+                    <img src="./images/start5.png" alt="Hardware Startup">
+                  </div>
+                  <span class="blog-category-tag">Lab to Market: Journey of a Hardware Startup</span>
+                  <h3 class="blog-title">
+                    Follow a real-world case from lab experiment to manufactured product, spotlighting the support and
+                    resources found at TechDen.
+                  </h3>
+                  <div class="blog-footer">
+                    <div class="blog-meta">
+                      <img src="./images/user2.jpg" alt="Alex Liu" class="blog-author-avatar">
+                      <span class="blog-meta-text">By Alex Liu | Oct 2025 | 4 min read</span>
+                    </div>
+                    <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="blog-slide">
+            <div class="blog-grid-container">
+              <div class="blog-grid-item">
+                <div class="blog-card">
+                  <div class="blog-image-container">
+                    <img src="./images/start3.png" alt="Tech Innovation">
+                  </div>
+                  <span class="blog-category-tag">Building the Future of Tech Innovation</span>
+                  <h3 class="blog-title">
+                    Explore how emerging technologies are reshaping industries and creating new opportunities for
+                    entrepreneurs.
+                  </h3>
+                  <div class="blog-footer">
+                    <div class="blog-meta">
+                      <img src="./images/user1.jpg" alt="Sarah Chen" class="blog-author-avatar">
+                      <span class="blog-meta-text">By Sarah Chen | Dec 2025 | 6 min read</span>
+                    </div>
+                    <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-grid-item">
+                <div class="blog-card">
+                  <div class="blog-image-container">
+                    <img src="./images/start4.png" alt="Startup Funding">
+                  </div>
+                  <span class="blog-category-tag">Startup Funding: A Complete Guide</span>
+                  <h3 class="blog-title">
+                    Navigate the complex world of startup funding with insights from successful entrepreneurs and
+                    investors.
+                  </h3>
+                  <div class="blog-footer">
+                    <div class="blog-meta">
+                      <img src="./images/user2.jpg" alt="Mike Johnson" class="blog-author-avatar">
+                      <span class="blog-meta-text">By Mike Johnson | Dec 2025 | 8 min read</span>
+                    </div>
+                    <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="blog-slide">
+            <div class="blog-grid-container">
+              <div class="blog-grid-item">
+                <div class="blog-card">
+                  <div class="blog-image-container">
+                    <img src="./images/start4.png" alt="AI Revolution">
+                  </div>
+                  <span class="blog-category-tag">The AI Revolution in Startups</span>
+                  <h3 class="blog-title">
+                    How artificial intelligence is transforming the startup ecosystem and creating new business models.
+                  </h3>
+                  <div class="blog-footer">
+                    <div class="blog-meta">
+                      <img src="./images/user1.jpg" alt="David Park" class="blog-author-avatar">
+                      <span class="blog-meta-text">By David Park | Jan 2026 | 7 min read</span>
+                    </div>
+                    <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-grid-item">
+                <div class="blog-card">
+                  <div class="blog-image-container">
+                    <img src="./images/start5.png" alt="Scaling Strategies">
+                  </div>
+                  <span class="blog-category-tag">Scaling Your Startup Successfully</span>
+                  <h3 class="blog-title">
+                    Learn proven strategies for scaling your startup from early stage to market leadership.
+                  </h3>
+                  <div class="blog-footer">
+                    <div class="blog-meta">
+                      <img src="./images/user2.jpg" alt="Lisa Wang" class="blog-author-avatar">
+                      <span class="blog-meta-text">By Lisa Wang | Jan 2026 | 5 min read</span>
+                    </div>
+                    <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Navigation -->
+    <div class="blog-slider-nav">
+      <button class="slider-btn slider-prev" onclick="blogSlider.prev()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="slider-dots">
+        <span class="slider-dot active" onclick="blogSlider.goToSlide(0)"></span>
+        <span class="slider-dot" onclick="blogSlider.goToSlide(1)"></span>
+        <span class="slider-dot" onclick="blogSlider.goToSlide(2)"></span>
+      </div>
+
+      <button class="slider-btn slider-next" onclick="blogSlider.next()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- SPACE DESIGNED FOR INNOVATORS SECTION -->
+<section class="innovators-section">
+  <div class="container">
+    <div class="innovators-grid-container">
+
+      <!-- Left Content -->
+      <div class="innovators-content">
+        <div class="innovators-icon">
+          <img src="./images/star.png" alt="" srcset="">
+        </div>
+        <h2 class="section-heading heading-xl spacing-sm">A Space Designed for Innovators</h2>
+        <p class="section-description text-lg">
+          Our campus includes labs, co-working spaces, and prototyping tools to help teams go from idea to impact.
+        </p>
+      </div>
+
+      <!-- Right Images Grid -->
+      <div class="innovators-images">
+        <div class="image-grid">
+
+          <!-- Image 1 - Lab Space -->
+          <div class="grid-image-item">
+            <img src="./images/space1.jpg" alt="Lab Space">
+            <div class="image-overlay">
+              <h3 class="overlay-title">Lab Space</h3>
+              <p class="overlay-text">Lorem ipsum dignissim nisl tortor</p>
+            </div>
+          </div>
+
+          <!-- Image 2 - Office Space -->
+          <div class="grid-image-item">
+            <img src="./images/space2.jpg" alt="Office Space">
+            <div class="image-overlay">
+              <h3 class="overlay-title">Office space</h3>
+              <p class="overlay-text">Lorem ipsum dignissim nisl tortor</p>
+            </div>
+          </div>
+
+          <!-- Image 3 - Co-working Area -->
+          <div class="grid-image-item">
+            <img src="./images/space3.jpg" alt="Co-working Area">
+            <div class="image-overlay">
+              <h3 class="overlay-title">Co-working Area</h3>
+              <p class="overlay-text">Lorem ipsum dignissim nisl tortor</p>
+            </div>
+          </div>
+
+          <!-- Image 4 - Meeting Room -->
+          <div class="grid-image-item">
+            <img src="./images/space4.jpg" alt="Meeting Room">
+            <div class="image-overlay">
+              <h3 class="overlay-title">Meeting Room</h3>
+              <p class="overlay-text">Lorem ipsum dignissim nisl tortor</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLEXIBLE MEMBERSHIP OPTIONS SECTION -->
+<section class="membership-section">
+  <div class="container-fluid">
+    <div class="membership-header">
+      <h2 class="section-heading heading-xl spacing-sm">Flexible Membership Options</h2>
+      <p class="section-description text-lg spacing-lg">
+        Choose a plan that fits your growth stage — from single founders to full startup teams.
+      </p>
+
+      <!-- Billing Toggle -->
+      <div class="billing-toggle">
+        <div class="toggle-container">
+          <button class="toggle-btn" data-option="monthly" id="monthlyBtn">Monthly</button>
+          <button class="toggle-btn active" data-option="annually" id="annuallyBtn">Annually</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="pricing-grid">
+
+      <!-- Starter Plan -->
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">Starter</h3>
+          <div class="plan-price">
+            <span class="price">$0</span>
+            <span class="price-period">per user/month, billed annually</span>
+          </div>
+          <p class="plan-description">For Solo founders & early-stage innovators</p>
+        </div>
+
+        <div class="card-features">
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Shared workspace access<br>
+              <span>(midday to evening hours)</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Community event invites and online workshops
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Monthly group mentorship sessions
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Wi-Fi, printing, and coffee bar
+            </div>
+          </div>
+        </div>
+
+        <button class="plan-button plan-button-outline">Get Started</button>
+      </div>
+
+      <!-- Explorer Plan -->
+      <div class="pricing-card featured">
+        <div class="card-header">
+          <h3 class="plan-name">Explorer</h3>
+          <div class="plan-price">
+            <span class="price">$100</span>
+            <span class="price-period">per user/month, billed annually</span>
+          </div>
+          <p class="plan-description">For founders building prototypes and growing small teams.</p>
+        </div>
+
+        <div class="card-features">
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Flexible desk in co-working area, 24/7 access
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Access to prototyping labs and maker equipment (limited hours)
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Monthly 1:1 mentorship and office hours
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Team collaboration rooms (4 hours / month)
+            </div>
+          </div>
+        </div>
+
+        <button class="plan-button plan-button-primary">Get Started</button>
+      </div>
+
+      <!-- Growth Plan -->
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">Growth</h3>
+          <div class="plan-price">
+            <span class="price">$200</span>
+            <span class="price-period">per user/month, billed annually</span>
+          </div>
+          <p class="plan-description">Designed for teams needing dedicated space and enhanced support.</p>
+        </div>
+
+        <div class="card-features">
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Private office space (2-5 members)
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Full access to labs and fabrication resources
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Unlimited meeting room bookings
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Accelerated mentorship, investor pitch prep
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Dedicated account manager and support
+            </div>
+          </div>
+        </div>
+
+        <button class="plan-button plan-button-outline">Get Started</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">Enterprise</h3>
+          <div class="plan-price">
+            <span class="price">Custom pricing</span>
+            <span class="price-period">per user/month, billed annually</span>
+          </div>
+          <p class="plan-description">For growing startups with complex needs and enterprise partnerships.</p>
+        </div>
+
+        <div class="card-features">
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Scalable private office suites and reserved desks
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Customized program integration & corporate innovation services
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Reserved lab and equipment priority booking
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Onsite technical and business support teams
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-check-icon">
+              <img src="./images/SealCheck.png" alt="" srcset="">
+            </div>
+            <div class="feature-text">
+              Partner networking and co-marketing opportunities
+            </div>
+          </div>
+        </div>
+
+        <button class="plan-button plan-button-outline">Get Started</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-slider-container">
+      <div class="testimonials-slider-wrapper">
+        <div class="testimonials-slider-track" id="testimonialsSliderTrack">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M10 20c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6h6v10H10V20zm20 0c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6h6v10H30V20z"
+                    fill="#10b981" />
+                </svg>
+              </div>
+
+              <blockquote class="testimonial-text">
+                There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun. The
+                truth is the universe is a constantly changing, moving, some would say "living" thing because you just
+                never know what you are going to see on any given night of stargazing.
+              </blockquote>
+
+              <div class="testimonial-company">
+                <img src="./images/logos_google.png" alt="" srcset="">
+              </div>
+
+              <div class="testimonial-author">
+                <h4 class="author-name">Charlie Mendoza</h4>
+                <p class="author-title">Product Designer</p>
+              </div>
+
+              <button class="testimonial-btn">Learn more</button>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M10 20c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6h6v10H10V20zm20 0c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6h6v10H30V20z"
+                    fill="#10b981" />
+                </svg>
+              </div>
+
+              <blockquote class="testimonial-text">
+                TechDen has been instrumental in helping us scale our startup from idea to market. The resources,
+                mentorship, and community support have been invaluable in our journey to build innovative solutions.
+              </blockquote>
+
+              <div class="testimonial-company">
+                <img src="./images/logos_google.png" alt="" srcset="">
+              </div>
+
+              <div class="testimonial-author">
+                <h4 class="author-name">Sarah Johnson</h4>
+                <p class="author-title">Senior Engineer</p>
+              </div>
+
+              <button class="testimonial-btn">Learn more</button>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M10 20c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6h6v10H10V20zm20 0c0-5.5 4.5-10 10-10v4c-3.3 0-6 2.7-6 6h6v10H30V20z"
+                    fill="#10b981" />
+                </svg>
+              </div>
+
+              <blockquote class="testimonial-text">
+                The collaborative environment at TechDen fostered innovation and creativity. We were able to prototype
+                rapidly and get valuable feedback from mentors and fellow entrepreneurs.
+              </blockquote>
+
+              <div class="testimonial-company">
+                <img src="./images/logos_google.png" alt="" srcset="">
+              </div>
+
+              <div class="testimonial-author">
+                <h4 class="author-name">Alex Chen</h4>
+                <p class="author-title">Startup Founder</p>
+              </div>
+
+              <button class="testimonial-btn">Learn more</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="testimonial-nav-btn testimonial-prev" onclick="testimonialsSlider.prev()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <button class="testimonial-nav-btn testimonial-next" onclick="testimonialsSlider.next()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN COMMUNITY SECTION -->
+<section class="join-community-section">
+  <div class="container">
+    <div class="community-content">
+      <div class="community-icon">
+        <img src="./images/Vector.png" alt="" srcset="">
+      </div>
+
+      <h2 class="section-heading community-title">Join the TechDen USA Community</h2>
+
+      <p class="section-description community-description">
+        Connect with founders, innovators, and partners. Access exclusive events, mentorship, and networking
+        opportunities.
+      </p>
+
+      <a href="#" class="community-btn">
+        Meet Our Community
+        <span>&#8599;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+  <div class="container-fluid">
+    <div class="footer-content">
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-link featured-link">Partners</a>
+          <a href="#" class="footer-link">Contact Us</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="#" class="footer-link">Facilities</a>
+          <a href="#" class="footer-link">Programs</a>
+          <a href="#" class="footer-link">Membership Plans</a>
+          <a href="#" class="footer-link">Book a Tour</a>
+        </div>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div class="footer-newsletter">
+        <h3 class="newsletter-title">Newsletter</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative Blue Elements -->
+      <div class="footer-decoration">
+      <img src="./images/footer-img.png" alt="">
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-info">
+        <p class="footer-address">123, PARK COLONY, NEW DELHI, INDIA 110016 / INFO@PM.COM / +91 98323 23255</p>
+        <p class="footer-copyright">COPYRIGHT © 2023 PM MEDIA. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Slider JavaScript -->
+<script src="./javascript/slider.js"></script>
+
+<!-- Pricing JavaScript -->
+<script src="./javascript/pricing.js"></script>
+
+<!-- Testimonials JavaScript -->
+<script src="./javascript/testimonials.js"></script>
+
+</body>
+
+</html>
