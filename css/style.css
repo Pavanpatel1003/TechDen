@@ -4,7 +4,7 @@
 
 /* Import Product Sans font */
 @font-face {
-  font-family: "Sans";
+  font-family: "Product Sans";
   src: url(../font/PTSans-Regular.ttf);
 }
 
@@ -65,23 +65,11 @@
 */
 
 body {
-  font-family: sans-serif;
+  font-family: "Product Sans";
   margin: 0;
   padding: 0;
 }
 
-/* For login/signup pages that need fixed height */
-body.fixed-height {
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* For home page and other scrollable pages */
-body.scrollable {
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
 /* =========================
    REUSABLE UTILITY CLASSES
@@ -307,94 +295,134 @@ body.scrollable {
 }
 
 /* FULL HEIGHT LAYOUT CLASS */
-.full-height-container {
-  height: 100vh !important;
-}
+.full-height-container {}
 
 .full-height-row {
-  height: 100vh !important;
-  margin: 0;
+  padding: 50px;
 }
 
 /* LEFT PANEL STYLING - Now uses reusable classes */
 .left-panel {
-  /* Uses .panel-dark class for base styling */
   background: #1a1a1a;
+  background-image: url(../images/loginbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: bottom; */
   color: #fff;
-  padding: 60px;
-  height: 100vh;
-  width: 50%;
+  padding: 40px 30px;
+  border-radius: 10px;
+  height: calc(100vh - 100px);
+}
+
+.left-panel .content {
+  /* max-width: 550px; */
+  z-index: 2;
   position: relative;
-  overflow: hidden;
 }
 
 /* Apply reusable classes to left panel content */
-.left-panel .heading-xl {
+.left-panel .heading-xl,
+.left-panel h1 {
   color: #fff;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
 }
 
-.left-panel .text-lg {
-  opacity: 0.7;
-  margin-top: 20px;
+.left-panel .text-lg,
+.left-panel p {
+  opacity: 0.85;
+  margin-top: 0;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lefts-panel {
+  background: #1a1a1a;
+  background-image: url(../images/commingsoonbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: calc(100vh - 100px);
 }
 
 /* DECORATIVE BLUE ELEMENTS */
 .decorative-elements {
   position: absolute;
-  bottom: 40px;
-  left: 60px;
+  bottom: 60px;
+  left: 80px;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
 }
 
 .blue-shape {
   background: #3B82F6;
-  border-radius: 8px;
+  border-radius: 16px;
   position: absolute;
 }
 
 .shape-1 {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   transform: rotate(45deg);
+  background: #3B82F6;
+  left: 0;
+  top: 0;
 }
 
 .shape-2 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
+  width: 55px;
+  height: 55px;
+  left: 80px;
   top: 10px;
   transform: rotate(45deg);
+  background: #5B9CFF;
 }
 
 .shape-3 {
-  width: 35px;
-  height: 35px;
-  left: 25px;
-  top: 50px;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: 85px;
   transform: rotate(45deg);
+  background: #2563eb;
 }
 
 .shape-4 {
-  width: 25px;
-  height: 25px;
-  left: 70px;
-  top: 60px;
+  width: 45px;
+  height: 45px;
+  left: 100px;
+  top: 90px;
   transform: rotate(45deg);
+  background: #4188FF;
 }
 
 /* RIGHT PANEL STYLING - Only for login/signup pages */
-body.fixed-height .col-lg-6:last-child {
-  /* Uses .panel-light class for base styling */
-  height: 100vh;
-  width: 50%;
-  background: #fafafa;
+/* .login-section .col-lg-6 {
+  padding: 0 !important;
+  height: 100vh !important;
+} */
+
+.login-section .col-lg-6:last-child {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* LOGIN BOX - Now uses reusable container class */
 .login-box {
-  /* Uses .container-custom class for base styling */
   width: 100%;
-  max-width: 400px;
-  padding: 40px;
+  max-width: 530px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 0px 10px;
 }
 
 /* LOGO STYLING - Now uses reusable classes */
@@ -402,23 +430,38 @@ body.fixed-height .col-lg-6:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .logo-icon {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  width: 145px;
+}
+
+.logo-icon svg {
+  width: 48px;
+  height: 48px;
 }
 
 /* Apply reusable classes to logo and welcome text */
-.logo-container .heading-xs {
+.logo-container .heading-xs,
+.logo-container h4 {
   color: #3B82F6;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.home-logo-icon {
+  margin-bottom: 12px;
+  /* width: 145px; */
 }
 
 .welcome-text {
-  /* Uses .heading-sm and .text-primary classes */
-  color: #1a1a1a;
+  color: #000;
   font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 0;
+  font-size: 30px;
+  letter-spacing: 1.5px;
 }
 
 /* SUBTITLE TEXT - Now uses reusable text class */
@@ -433,42 +476,74 @@ body.fixed-height .col-lg-6:last-child {
 /* TABS */
 .nav-tabs {
   border-bottom: none;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  display: flex;
+  width: 100%;
+}
+
+.nav-tabs .nav-item {
+  flex: 1;
+  text-align: center;
 }
 
 .nav-tabs .nav-link {
-  color: #999;
+  color: #000;
   border: none;
   border-bottom: 2px solid transparent;
   background: none;
-  font-weight: 500;
-  padding: 10px 20px;
+  font-weight: 400;
+  padding: 12px 0px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-tabs .nav-link.active {
   color: #1a1a1a;
   font-weight: 600;
-  border-bottom: 2px solid #3B82F6;
   background: none;
+  position: relative;
+  width: 100%;
+  /* border-bottom: 2px solid; */
+}
+
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #1a1a1a;
 }
 
 .nav-tabs .nav-link:hover {
   border-color: transparent;
+  color: #1a1a1a;
 }
 
 /* FORM STYLING - Now uses reusable classes */
 .form-group {
   /* Uses .spacing-sm class */
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
+
+.login li {
+  width: 50%;
+}
+
 
 /* Form labels now use .label-custom class */
 .form-label {
   /* Uses .label-custom class for consistent styling */
   color: #1a1a1a;
-  font-weight: 500;
-  margin-bottom: 8px;
-  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: block;
 }
 
 .input-group {
@@ -494,19 +569,20 @@ body.fixed-height .col-lg-6:last-child {
 /* Form controls now use .input-custom class */
 .form-control {
   /* Uses .input-custom class for consistent styling */
-  padding: 15px 15px 15px 45px !important;
+  padding: 14px 15px 14px 45px !important;
   border: 1px solid #e0e0e0 !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   font-size: 14px !important;
   background: #fff !important;
   transition: all 0.3s ease;
   position: relative;
   z-index: 1;
+  height: 50px;
 }
 
 .form-control:focus {
-  border-color: #3B82F6;
-  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.1);
+  border-color: #3B82F6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
   outline: none;
 }
 
@@ -517,6 +593,7 @@ body.fixed-height .col-lg-6:last-child {
 
 .form-control::placeholder {
   color: #aaa;
+  font-size: 14px;
 }
 
 /* SELECT DROPDOWN STYLING */
@@ -537,21 +614,31 @@ select.form-control:focus {
 /* BOOTSTRAP BUTTON OVERRIDES - Now use reusable button classes */
 .btn-primary {
   /* Uses .btn-primary-custom class for consistent styling */
-  background: linear-gradient(135deg, #4188FF 0%, #5B9CFF 100%);
-  border: none;
-  padding: 16px 32px;
+  /* background: linear-gradient(135deg, #4188FF 0%, #5B9CFF 100%); */
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%);
+
+  border: 1px solid #E1E1E1;
+  padding: 14px 32px;
   border-radius: 50px;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
   margin-top: 10px;
-  box-shadow: 0 4px 15px rgba(65, 136, 255, 0.3);
+  /* box-shadow: 0 4px 15px rgba(65, 136, 255, 0.3); */
   transition: all 0.3s ease;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
+  /* background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%); */
+  background: linear-gradient(263.25deg, #F240FF -16.37%, #4188FF 150.97%);
+  border: none;
+
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4); */
 }
 
 /* OUTLINE BUTTON - Now uses reusable outline button class */
@@ -578,27 +665,36 @@ select.form-control:focus {
 .forgot {
   font-size: 14px;
   text-decoration: none;
-  color: #3B82F6;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .forgot:hover {
   color: #2563eb;
+  text-decoration: underline;
 }
 
 /* SIGN UP LINK */
 .login-box p:last-child {
-  color: #666;
-  font-size: 14px;
+  color: #828282;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  /* margin-top: 24px; */
+  margin-bottom: 24px;
 }
 
 .login-box p:last-child a {
-  color: #3B82F6;
+  color: #4188FF;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .login-box p:last-child a:hover {
   color: #2563eb;
+  text-decoration: underline;
 }
 
 /* BUTTON SPACING */
@@ -638,7 +734,7 @@ textarea.form-control:focus {
 }
 
 .input-group .form-control:not(:first-child) {
-  border-radius: 8px !important;
+  border-radius: 100px !important;
 }
 
 .input-group .form-control:not(:last-child) {
@@ -655,7 +751,7 @@ textarea.form-control:focus {
   position: relative;
   padding: 15px 15px 15px 45px;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 100px;
   background: #fff;
   cursor: pointer;
   display: flex;
@@ -757,7 +853,7 @@ textarea.form-control:focus {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  max-height: 200px;
+  /* max-height: 200px; */
   overflow-y: auto;
 }
 
@@ -771,20 +867,20 @@ textarea.form-control:focus {
   padding: 12px 20px;
   cursor: pointer;
   transition: all 0.2s ease;
-  color: #333;
+  color: #4C4C5C;
   font-size: 14px;
-  border-radius: 8px;
+  border-radius: 20px;
   margin: 4px 8px;
 }
 
 .dropdown-option:hover {
-  background: #f8f9fa;
-  color: #333;
+  background: #e3f2fd;
+  color: #4C4C5C;
 }
 
 .dropdown-option.selected {
   background: #e3f2fd;
-  color: #3B82F6;
+  color: #4C4C5C;
   font-weight: 500;
 }
 
@@ -822,7 +918,7 @@ textarea.form-control:focus {
 
 .col-lg-6.position-relative {
   padding: 60px 80px;
-  height: 100vh;
+  height: calc(100vh - 100px);
   justify-content: space-between;
 }
 
@@ -857,16 +953,15 @@ textarea.form-control:focus {
 }
 
 .coming-soon-title {
-  font-size: 64px;
+  margin-bottom: 20px;
+  font-size: 74px;
   font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 40px;
+  color: #31456A;
   line-height: 1.1;
-  letter-spacing: -0.02em;
 }
 
 .description-section {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .desc-line-1 {
@@ -914,7 +1009,7 @@ textarea.form-control:focus {
   width: 100%;
   padding: 16px 16px 16px 48px;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border-radius: 100px;
   font-size: 16px;
   background: #fff;
   color: #1e293b;
@@ -933,12 +1028,14 @@ textarea.form-control:focus {
 }
 
 .subscribe-btn {
-  background: linear-gradient(135deg, #4188FF 0%, #5B9CFF 100%);
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%);
   color: white;
   border: none;
-  padding: 16px 32px;
-  border-radius: 50px;
+  padding: 10px 32px;
+  border-radius: 48px;
   font-size: 16px;
+  min-height: 50px;
+  min-width: 192px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -974,6 +1071,389 @@ textarea.form-control:focus {
 /* =========================
    LOGIN/SIGNUP SECTIONS
 ========================= */
+
+/* ========== SIGNUP SECTION STYLES ========== */
+.signup-section {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.signup-section .main-wrapper {
+  min-height: 100vh;
+}
+
+.signup-section .full-height-container {
+  min-height: 100vh;
+}
+
+.signup-section .full-height-row {
+  min-height: calc(100vh - 100px);
+  align-items: stretch;
+}
+
+/* Signup Left Panel */
+.signup-section .left-panel {
+  background: #1a1a1a;
+  background-image: url(../images/loginbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 10px;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.signup-section .left-panel .content h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+}
+
+.signup-section .left-panel .content p {
+  opacity: 0.85;
+  margin-top: 0;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Signup Right Panel */
+.signup-section .col-lg-8 {
+  background: #ffffff;
+  padding: 40px 20px;
+  min-height: calc(100vh - 100px);
+}
+
+/* Signup Box */
+.signup-section .login-box {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow-y: visible;
+  padding: 20px;
+}
+
+/* Signup Logo Container */
+.signup-section .logo-container {
+  margin-bottom: 40px;
+}
+
+.signup-section .logo-container .logo-icon {
+  width: 145px;
+  margin-bottom: 16px;
+}
+
+.signup-section .logo-container .logo-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.signup-section .welcome-text {
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.signup-section .subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+/* Signup Form Styling */
+.signup-section .form-group {
+  margin-bottom: 24px;
+}
+
+.signup-section .form-label {
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: block;
+}
+
+.signup-section .input-group {
+  position: relative;
+}
+
+.signup-section .input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  z-index: 10;
+  font-size: 14px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.signup-section .form-control {
+  padding: 14px 15px 14px 45px !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  background: #fff !important;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  height: 50px;
+}
+
+.signup-section .form-control:focus {
+  border-color: #3B82F6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+  outline: none;
+}
+
+.signup-section .form-control:focus + .input-icon,
+.signup-section .form-control:not(:placeholder-shown) + .input-icon {
+  color: #3B82F6;
+}
+
+.signup-section .form-control::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Signup Custom Dropdown Styling */
+.signup-section .custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.signup-section .dropdown-selected {
+  position: relative;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  color: #aaa;
+  height: 50px;
+}
+
+.signup-section .dropdown-selected:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signup-section .dropdown-selected.active {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signup-section .dropdown-selected .input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.signup-section .dropdown-selected:hover .input-icon,
+.signup-section .dropdown-selected.active .input-icon {
+  color: #3B82F6;
+}
+
+.signup-section .selected-text {
+  flex: 1;
+  text-align: left;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.signup-section .selected-text.has-value {
+  color: #333;
+}
+
+.signup-section .dropdown-arrow {
+  color: #999;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.signup-section .dropdown-selected:hover .dropdown-arrow,
+.signup-section .dropdown-selected.active .dropdown-arrow {
+  transform: rotate(180deg);
+  color: #3B82F6;
+}
+
+.signup-section .dropdown-options {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.signup-section .dropdown-options.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.signup-section .dropdown-option {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #4C4C5C;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 4px 8px;
+}
+
+.signup-section .dropdown-option:hover {
+  background: #e3f2fd;
+  color: #4C4C5C;
+}
+
+.signup-section .dropdown-option.selected {
+  background: #e3f2fd;
+  color: #4C4C5C;
+  font-weight: 500;
+}
+
+/* Signup Button */
+.signup-section .btn-primary {
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%);
+  border: 1px solid #E1E1E1;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.signup-section .btn-primary:hover {
+  background: linear-gradient(263.25deg, #F240FF -16.37%, #4188FF 150.97%);
+  border: none;
+  color: white;
+}
+
+/* Signup Login Link */
+.signup-section p:last-child {
+  color: #828282;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.signup-section p:last-child a {
+  color: #4188FF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.signup-section p:last-child a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Fixed Height Body for Signup */
+.fixed-height {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Responsive Adjustments for Signup */
+@media (max-width: 991.98px) {
+  .signup-section .left-panel {
+    display: none !important;
+  }
+  
+  .signup-section .col-lg-8 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .signup-section .full-height-row {
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .signup-section .login-box {
+    padding: 10px;
+    height: auto;
+    overflow-y: visible;
+  }
+  
+  .signup-section .welcome-text {
+    font-size: 24px;
+  }
+  
+  .signup-section .subtitle {
+    font-size: 14px;
+  }
+  
+  .signup-section .left-panel .content h1 {
+    font-size: 36px;
+  }
+  
+  .signup-section .left-panel .content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .signup-section .container-fluid {
+    padding: 1rem !important;
+  }
+  
+  .signup-section .welcome-text {
+    font-size: 20px !important;
+  }
+  
+  .signup-section .btn-primary {
+    font-size: 16px !important;
+  }
+}
 
 /* =========================
    COMING SOON SECTION
@@ -2557,7 +3037,7 @@ div img {
 
 .join-community-section {
   background:
-    linear-gradient(135deg, rgb(224 231 255 / 72%) 0%, rgb(199 210 254 / 53%) 100%), url(../images/join.jpg) center / cover no-repeat;
+    linear-gradient(135deg, rgb(224 231 255 / 72%) 0%, rgb(199 210 254 / 53%) 100%), url(../images/join.png) center / cover no-repeat;
   /* background-image: url(../images/join.jpg); */
   padding: 100px 0;
   text-align: center;
@@ -2847,19 +3327,19 @@ div img {
   }
 }
 
-  .circle-2 {
-    width: 100px;
-    height: 50px;
-    border-radius: 50px 50px 0 0;
-    top: 40px;
-  }
+.circle-2 {
+  width: 100px;
+  height: 50px;
+  border-radius: 50px 50px 0 0;
+  top: 40px;
+}
 
-  .circle-3 {
-    width: 120px;
-    height: 60px;
-    border-radius: 60px 60px 0 0;
-    top: 90px;
-  }
+.circle-3 {
+  width: 120px;
+  height: 60px;
+  border-radius: 60px 60px 0 0;
+  top: 90px;
+}
 
 
 /* =========================

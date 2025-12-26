@@ -14,7 +14,9 @@ function login() {
   }
 
   if (email || mobile) {
-    alert("Login successful!");
+    alert("Login successful! Welcome to TechDen!");
+    // Redirect to coming-soon page after successful login
+    window.location.href = "coming-soon.html";
   } else {
     alert("Please enter Email or Mobile number");
   }
@@ -36,48 +38,152 @@ function createAccount() {
   const confirmPassword = document.getElementById("confirmPassword").value;
   const role = document.getElementById("role").value;
   const membership = document.getElementById("membership").value;
+  const termsCheck = document.getElementById("termsCheck").checked;
 
   // Validation
-  if (!fullName) {
-    alert("Please enter your full name");
+  if (!fullName.trim()) {
+    showAlert("Please enter your full name", "error");
     return;
   }
 
-  if (!email) {
-    alert("Please enter your email address");
+  if (!email.trim()) {
+    showAlert("Please enter your email address", "error");
+    return;
+  }
+
+  if (!isValidEmail(email)) {
+    showAlert("Please enter a valid email address", "error");
     return;
   }
 
   if (!password) {
-    alert("Please create a password");
+    showAlert("Please create a password", "error");
+    return;
+  }
+
+  if (password.length < 8) {
+    showAlert("Password must be at least 8 characters long", "error");
     return;
   }
 
   if (!confirmPassword) {
-    alert("Please confirm your password");
+    showAlert("Please confirm your password", "error");
     return;
   }
 
   if (password !== confirmPassword) {
-    alert("Passwords do not match");
+    showAlert("Passwords do not match", "error");
     return;
   }
 
   if (!role) {
-    alert("Please select your role");
+    showAlert("Please select your role", "error");
     return;
   }
 
   if (!membership) {
-    alert("Please choose a membership plan");
+    showAlert("Please choose a membership plan", "error");
     return;
   }
 
-  // Success
-  alert("Account created successfully! Welcome to TechDen!");
+  if (!termsCheck) {
+    showAlert("Please agree to the Terms of Service and Privacy Policy", "error");
+    return;
+  }
+
+  // Show loading state
+  const button = document.querySelector('.signup-btn');
+  button.classList.add('loading');
+  button.textContent = 'Creating Account...';
+
+  // Simulate API call
+  setTimeout(() => {
+    button.classList.remove('loading');
+    button.textContent = 'Create Account';
+    
+    showAlert("Account created successfully! Welcome to TechDen!", "success");
+    
+    // Redirect to login page after 2 seconds
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 2000);
+  }, 2000);
+}
+
+// Email validation function
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Password toggle functionality
+function togglePassword(inputId) {
+  const input = document.getElementById(inputId);
+  const eyeIcon = document.getElementById(inputId + '-eye');
   
-  // Redirect to login page
-  window.location.href = "index.html";
+  if (input.type === 'password') {
+    input.type = 'text';
+    eyeIcon.classList.remove('fa-eye');
+    eyeIcon.classList.add('fa-eye-slash');
+  } else {
+    input.type = 'password';
+    eyeIcon.classList.remove('fa-eye-slash');
+    eyeIcon.classList.add('fa-eye');
+  }
+}
+
+// Alert function
+function showAlert(message, type) {
+  // Remove existing alerts
+  const existingAlert = document.querySelector('.custom-alert');
+  if (existingAlert) {
+    existingAlert.remove();
+  }
+
+  // Create alert element
+  const alert = document.createElement('div');
+  alert.className = `custom-alert alert-${type}`;
+  alert.innerHTML = `
+    <div class="alert-content">
+      <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+      <span>${message}</span>
+    </div>
+  `;
+
+  // Add styles
+  alert.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 10000;
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    background: ${type === 'success' ? '#10b981' : '#ef4444'};
+  `;
+
+  // Add to body
+  document.body.appendChild(alert);
+
+  // Animate in
+  setTimeout(() => {
+    alert.style.transform = 'translateX(0)';
+  }, 100);
+
+  // Remove after 5 seconds
+  setTimeout(() => {
+    alert.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      if (alert.parentNode) {
+        alert.parentNode.removeChild(alert);
+      }
+    }, 300);
+  }, 5000);
 }
 
 // =========================
@@ -93,7 +199,7 @@ function toggleDropdown(dropdownId) {
     const selected = dropdown.previousElementSibling;
     
     // Close all other dropdowns
-    document.querySelectorAll('.dropdown-options').forEach(option => {
+    document.querySelectorAll('.dropdown-options, .signup-dropdown-options').forEach(option => {
         if (option.id !== dropdownId) {
             option.classList.remove('show');
             option.previousElementSibling.classList.remove('active');
@@ -116,7 +222,7 @@ function selectOption(inputId, value, text) {
     
     // Update selected option styling
     const dropdown = document.getElementById(inputId + 'Dropdown');
-    dropdown.querySelectorAll('.dropdown-option').forEach(option => {
+    dropdown.querySelectorAll('.dropdown-option, .signup-dropdown-option').forEach(option => {
         option.classList.remove('selected');
     });
     
@@ -130,8 +236,8 @@ function selectOption(inputId, value, text) {
 
 // Close dropdown when clicking outside
 document.addEventListener('click', function(event) {
-    if (!event.target.closest('.custom-dropdown')) {
-        document.querySelectorAll('.dropdown-options').forEach(dropdown => {
+    if (!event.target.closest('.custom-dropdown') && !event.target.closest('.signup-custom-dropdown')) {
+        document.querySelectorAll('.dropdown-options, .signup-dropdown-options').forEach(dropdown => {
             dropdown.classList.remove('show');
             dropdown.previousElementSibling.classList.remove('active');
         });
@@ -139,9 +245,11 @@ document.addEventListener('click', function(event) {
 });
 
 // Prevent dropdown from closing when clicking inside
-document.querySelectorAll('.dropdown-options').forEach(dropdown => {
-    dropdown.addEventListener('click', function(event) {
-        event.stopPropagation();
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.dropdown-options, .signup-dropdown-options').forEach(dropdown => {
+        dropdown.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
     });
 });
 

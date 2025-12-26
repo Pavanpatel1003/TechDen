@@ -1,0 +1,402 @@
+/* ===============================
+   BOOTSTRAP 5 SIGNUP PAGE - PROFESSIONAL DESIGN
+   =============================== */
+
+/* ========== LEFT PANEL STYLING ========== */
+.signup-left-panel {
+    background-image: url('../images/loginbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 10px;
+}
+
+.signup-left-panel .position-relative {
+    padding: 40px 35px;
+    width: 77%;
+}
+
+.signup-title {
+    font-size: 62px;
+    letter-spacing: 1.5px;
+}
+
+.signup-description {
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+}
+
+/* ========== RIGHT PANEL STYLING ========== */
+.welcome-logo {
+    width: 145px;
+}
+
+.welcome-title {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.welcome-subtitle {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+}
+
+.signup-form-container {
+    max-width: 530px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+/* ========== FORM INPUT STYLING ========== */
+.signup-input {
+    height: 50px;
+}
+
+.signup-input:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+.signup-input:focus+i,
+.signup-input:not(:placeholder-shown)+i {
+    color: #3B82F6 !important;
+}
+
+/* ========== CUSTOM DROPDOWN STYLING ========== */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-selected {
+    position: relative;
+    padding: 16px 15px 16px 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #6c757d;
+    height: 50px;
+}
+
+.dropdown-selected:hover {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.dropdown-selected.active {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.selected-text {
+    flex: 1;
+    text-align: left;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.selected-text.has-value {
+    color: #212529;
+}
+
+.dropdown-arrow {
+    color: #6c757d;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.dropdown-selected:hover .dropdown-arrow,
+.dropdown-selected.active .dropdown-arrow {
+    transform: rotate(180deg);
+    color: #3B82F6;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.dropdown-options.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-option {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #495057;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-option:hover {
+    background: #f8f9fa;
+    color: #3B82F6;
+}
+
+.dropdown-option.selected {
+    background: #e3f2fd;
+    color: #3B82F6;
+    font-weight: 500;
+}
+
+.dropdown-option:first-child {
+    margin-top: 8px;
+}
+
+.dropdown-option:last-child {
+    margin-bottom: 8px;
+}
+
+.dropdown-option i {
+    color: inherit;
+}
+
+/* ========== BUTTON STYLING ========== */
+.signup-btn {
+    background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 100px;
+    border: none;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(263.25deg, #F240FF -16.37%, #4188FF 150.97%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(65, 136, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.signup-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(65, 136, 255, 0.3);
+}
+
+.signup-btn:active {
+    transform: translateY(0);
+}
+
+/* ========== FORM CHECK STYLING ========== */
+.form-check-input:checked {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+.form-check-input:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+}
+
+.form-check-label a {
+    color: #3B82F6;
+}
+
+.form-check-label a:hover {
+    color: #2563eb;
+}
+
+/* ========== SIGNUP TEXT STYLING ========== */
+.signup-text {
+    letter-spacing: 1.5px;
+}
+
+.signup-link {
+    color: #4188FF;
+}
+
+.signup-link:hover {
+    color: #2563eb;
+}
+
+/* ========== PASSWORD TOGGLE BUTTON ========== */
+.password-toggle {
+    background: none;
+    border: none;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover {
+    color: #3B82F6;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 767.98px) {
+    .display-4 {
+        font-size: 2.5rem !important;
+    }
+
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+
+    .welcome-title {
+        font-size: 24px !important;
+    }
+
+    .signup-btn {
+        font-size: 16px !important;
+    }
+
+    .dropdown-selected {
+        padding: 12px 40px 12px 40px;
+        height: 45px;
+    }
+
+    .signup-input {
+        height: 45px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container-fluid {
+        padding: 1rem !important;
+    }
+
+    .welcome-title {
+        font-size: 20px !important;
+    }
+
+    .dropdown-option {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* ========== UTILITY CLASSES ========== */
+.border-bottom-2 {
+    border-bottom-width: 2px !important;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+/* ========== SCROLLBAR STYLING ========== */
+.dropdown-options::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* ========== ANIMATION EFFECTS ========== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signup-form-container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ========== FOCUS STATES ========== */
+.form-control:focus,
+.dropdown-selected:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+    outline: none;
+}
+
+/* ========== HOVER EFFECTS ========== */
+.form-control:hover {
+    border-color: #adb5bd;
+}
+
+.dropdown-selected:hover {
+    transform: translateY(-1px);
+}
+
+/* ========== ICON STYLING ========== */
+.position-absolute i {
+    transition: color 0.3s ease;
+}
+
+.form-control:focus~i,
+.form-control:not(:placeholder-shown)~i {
+    color: #3B82F6 !important;
+}
+
+/* ========== LOADING STATE ========== */
+.signup-btn.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.signup-btn.loading::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    border: 2px solid transparent;
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
