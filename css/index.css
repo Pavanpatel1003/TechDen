@@ -84,6 +84,7 @@ body {
   color: white;
   border-radius: 4px;
   position: relative;
+  font-weight: 700; /* Make active page bold */
 }
 
 .navbar-nav .nav-link.hover-box::before {
@@ -204,13 +205,13 @@ body {
   background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%);
   border: none;
   color: white;
-  box-shadow: 0 4px 15px rgba(65, 136, 255, 0.3);
+  /* box-shadow: 0 4px 15px rgba(65, 136, 255, 0.3); */
 }
 
 .btn-primary-custom:hover {
   background: linear-gradient(263.25deg, #F240FF -16.37%, #4188FF 150.97%) !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
+  /* box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4); */
   color: white;
 }
 
@@ -294,7 +295,7 @@ body {
 }
 
 .startup-content {
-  padding: 30px;
+  padding: 30px 0px 0px 0px;
   text-align: left;
 }
 
@@ -659,10 +660,9 @@ body {
 
 .toggle-container {
   display: flex;
-  background: #f1f5f9;
   border-radius: 50px;
   padding: 4px;
-  border: 2px solid #e2e8f0;
+  border: 1px solid #E4E4E4;
   gap: 4px;
 }
 
@@ -677,7 +677,7 @@ body {
   transition: all 0.3s ease;
   min-width: 100px;
   background: transparent;
-  color: #64748b;
+  color: #828282;
 }
 
 .toggle-btn.active {
@@ -686,27 +686,15 @@ body {
   font-weight: 600;
 }
 
-/* Pricing Grid */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
+/* Pricing Cards - Bootstrap Grid */
 .pricing-card {
-  /* background: white; */
-  /* background-image: url(../images/space1.jpg); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* border-radius: 20px; */
+  background-repeat: round;
   padding: 32px 24px;
   transition: all 0.3s ease;
-  /* position: relative; */
-  /* border: 10px solid #8282821A; */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  /* border: 1px solid #e0e0e0; */
 }
 
 /* .pricing-card::before {
@@ -719,56 +707,112 @@ body {
   background: rgba(255, 255, 255, 0.95);
   transition: all 0.3s ease;
   z-index: 1;
-} */
+}
 
 .pricing-card:hover::before {
-  background: transparent;
-}
+  background: rgba(255, 255, 255, 0.1);
+} */
 
 .pricing-card * {
   position: relative;
   z-index: 2;
 }
 
+.pricing-card .card-features {
+  flex-grow: 1;
+}
+
+.pricing-card .plan-button {
+  margin-top: auto;
+}
+
 /* Different background images for each card */
-.pricing-card:nth-child(1) {
+.pricing-card-first {
   background-image: url(../images/starter.png);
 }
 
-.pricing-card:nth-child(1):hover {
-  background-image: url(../images/starter.png);
+.pricing-card-first:hover {
+  background-image: url(../images/starter_hover.png);
 }
 
-.pricing-card:nth-child(2) {
+.pricing-card-sec {
   background-image: url(../images/explorer.png);
 }
 
-.pricing-card:nth-child(2):hover {
-  background-image: url(../images/explore.png);
+.pricing-card-sec:hover {
+  background-image: url(../images/explorer_hover.png);
 }
 
-.pricing-card:nth-child(3) {
+.pricing-card-third {
   background-image: url(../images/growth.png);
 }
 
-.pricing-card:nth-child(3):hover {
-  background-image: url(../images/growth.png);
+.pricing-card-third:hover {
+  background-image: url(../images/growth_hover.png);
 }
 
-.pricing-card:nth-child(4) {
+.pricing-card-four {
   background-image: url(../images/custom.png);
 }
 
-.pricing-card:nth-child(4):hover {
-  background-image: url(../images/custom.png);
+.pricing-card-four:hover {
+  background-image: url(../images/custom_hover.png);
 }
 
-.pricing-card.featured {
-  transform: scale(1.05);
+/* Featured card (Explorer) special styling */
+/* .pricing-card.featured {
+  border: 2px solid #4188FF;
+} */
+
+/* .pricing-card.featured::before {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.pricing-card.featured:hover::before {
+  background: rgba(255, 255, 255, 0.05);
+} */
+
+/* Responsive adjustments for pricing cards */
+@media (max-width: 768px) {
+  .pricing-card {
+    padding: 24px 20px;
+    margin-bottom: 20px;
+  }
+
+  .plan-name {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-card {
+    padding: 20px 16px;
+  }
+
+  .plan-name {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 28px;
+  }
 }
 
 .pricing-card:hover {
   cursor: pointer;
+}
+
+.plan-button-primary:hover .plan-button-primary {
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%) !important;
+  color: white;
 }
 
 .card-header {
@@ -818,7 +862,7 @@ body {
 
 .feature-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   margin-bottom: 16px;
 }
@@ -853,15 +897,15 @@ body {
 }
 
 .plan-button-primary {
-  background: linear-gradient(135deg, #4188FF 0%, #5B9CFF 100%);
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%) !important;
   color: white;
   border: none;
 }
 
 .plan-button-primary:hover {
-  background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
+  background: linear-gradient(135deg, #F240FF 0%, #4188FF 100%);
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4); */
 }
 
 .plan-button-outline {
@@ -869,11 +913,6 @@ body {
   color: #64748b;
   border: none;
   font-weight: 400;
-}
-
-.plan-button-outline:hover {
-  background: #e2e8f0;
-  color: #475569;
 }
 
 /* ========== TESTIMONIALS SECTION ========== */
@@ -884,7 +923,7 @@ body {
 
 .testimonials-slider-container {
   position: relative;
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 0 auto;
 }
 
@@ -979,13 +1018,14 @@ body {
 }
 
 /* Navigation Arrows */
-.testimonial-nav-btn {
+/* .testimonial-nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%) !important;
   border: 2px solid #e2e8f0;
   background: white;
   color: #64748b;
@@ -996,7 +1036,33 @@ body {
   transition: all 0.3s ease;
   font-size: 16px;
   z-index: 10;
+} */
+
+.testimonial-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  border: 2px solid transparent;
+
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%) border-box;
+
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  z-index: 10;
 }
+
+
 
 .testimonial-prev {
   left: -25px;
@@ -1006,21 +1072,33 @@ body {
   right: -25px;
 }
 
-.testimonial-nav-btn:hover {
+.fa-chevron-right,
+.fa-chevron-left {
+  background: linear-gradient(263.25deg, #4188FF -16.37%, #F240FF 150.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* .testimonial-nav-btn:hover {
   border-color: #3B82F6;
   color: #3B82F6;
   background: #f8fafc;
   transform: translateY(-50%) scale(1.1);
-}
+} */
 
 /* ========== JOIN COMMUNITY SECTION ========== */
 .join-community-section {
-  background:
+  /* background:
     linear-gradient(135deg, rgb(224 231 255 / 72%) 0%, rgb(199 210 254 / 53%) 100%),
-    url(../images/join.png) center / cover no-repeat;
+    url(../images/join.png) center / cover no-repeat; */
+  background-image: url(../images/join.png);
   padding: 100px 0;
   text-align: center;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .community-content {
@@ -1108,9 +1186,9 @@ body {
 }
 
 .footer-link {
-  color: #64748b;
+  color: #0000004D;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 400;
   transition: color 0.3s ease;
   line-height: 1.5;
@@ -1260,10 +1338,6 @@ body {
   }
 
   .blog-grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-grid {
     grid-template-columns: 1fr;
   }
 
