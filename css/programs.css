@@ -91,7 +91,8 @@ body {
     border-radius: 4px;
     position: relative;
     font-weight: 700;
-    /* Make active page bold */
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 .navbar-nav .nav-link.hover-box::before {
@@ -974,7 +975,7 @@ body {
 }
 
 .footer-link:hover {
-    color: #3B82F6;
+    color: #2E2E2E;
 }
 
 .footer-link.featured-link {

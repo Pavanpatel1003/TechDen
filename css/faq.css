@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 1640px;
+}
+
 /* ========== HERO SECTION ========== */
 .hero {
   /* min-height: 100vh; */
@@ -45,9 +49,10 @@ body {
 /* Menu hover effect with corner brackets */
 .navbar-nav .nav-link:hover {
   color: #4188FF;
-  font-weight: 700;
-  /* border-radius: 4px; */
+  border-radius: 4px;
   position: relative;
+  font-weight: 700;
+  font-size: 18px;
   letter-spacing: 0.5px;
 }
 
@@ -86,7 +91,8 @@ body {
   color: #4188FF;
   border-radius: 4px;
   position: relative;
-  font-weight: 700; /* Make active page bold */
+  font-weight: 700;
+  /* Make active page bold */
 }
 
 .navbar-nav .nav-link.hover-box::before {
@@ -210,7 +216,7 @@ body {
 }
 
 .footer-link:hover {
-  color: #3B82F6;
+  color: #2E2E2E;
 }
 
 .footer-link.featured-link {
@@ -240,11 +246,11 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: #e2e8f0;
+  /* background: #e2e8f0; */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #64748b;
+  color: #4188FF;
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 20px;
@@ -367,8 +373,8 @@ body {
 
 .faq-main-content {
   /* max-width: 1000px; */
-  margin: 0 auto;
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* FAQ Header */
@@ -390,7 +396,7 @@ body {
 .faq-main-title {
   font-size: 48px;
   font-weight: 700;
-  color: #1e293b;
+  color: #000000;
   margin-bottom: 16px;
   line-height: 1.2;
 }
@@ -422,12 +428,15 @@ body {
 
 /* FAQ Accordion */
 .faq-main-accordion {
-  /* max-width: 800px; */
-  margin: 0 auto;
+  max-width: 795px;
+  border: 1px solid #E1E1E1;
+  border-radius: 10px;
+  padding: 0px 15px;
+  /* margin: 0 auto;
   border: 1px solid #E1E1E1;
   border-radius: 10px;
   padding: 25px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .faq-main-item {
