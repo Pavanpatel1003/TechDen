@@ -181,7 +181,7 @@ body {
 
 .btn-primary-custom:hover {
   background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
   color: white;
 }
@@ -203,7 +203,7 @@ body {
   background: linear-gradient(135deg, #4188FF 0%, #5B9CFF 100%);
   border-color: #4188FF;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -637,7 +637,7 @@ select.form-control:focus {
   background: linear-gradient(263.25deg, #F240FF -16.37%, #4188FF 150.97%);
   border: none;
 
-  /* transform: translateY(-2px); */
+  transform: translateY(-2px) scale(1.05);
   /* box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4); */
 }
 
@@ -657,7 +657,7 @@ select.form-control:focus {
   background: linear-gradient(135deg, #4188FF 0%, #5B9CFF 100%);
   border-color: #4188FF;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -1044,7 +1044,7 @@ textarea.form-control:focus {
 
 .subscribe-btn:hover {
   background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -1660,7 +1660,7 @@ div img {
 .btn-view-stories:hover {
   background-color: #2563eb;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .startup-card {
@@ -2177,7 +2177,7 @@ div img {
 
 .blog-card:hover {
   /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); */
-  /* transform: translateY(-2px); */
+  transform: translateY(-2px) scale(1.05);
 }
 
 .blog-image-container {
@@ -2805,7 +2805,7 @@ div img {
 
 .plan-button-primary:hover {
   background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -2954,7 +2954,7 @@ div img {
 
 .testimonial-btn:hover {
   background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -3102,7 +3102,7 @@ div img {
 .community-btn:hover {
   background: linear-gradient(135deg, #2563eb 0%, #4188FF 100%);
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -3221,7 +3221,7 @@ div img {
 .social-icon:hover {
   background: #3B82F6;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Decorative Elements */
@@ -3652,7 +3652,7 @@ div img {
 .program-apply-btn:hover {
   background: #2563eb;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -3908,7 +3908,7 @@ div img {
 .btn-cohort-primary:hover {
   background: #2563eb;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .btn-cohort-secondary {
@@ -3931,7 +3931,7 @@ div img {
 .btn-cohort-secondary:hover {
   background: #f8fafc;
   color: #2563eb;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Responsive adjustments */
@@ -4090,7 +4090,7 @@ div img {
 
 .apply-submit-btn:hover {
   background: #2563eb;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.3);
 }
 
@@ -4186,7 +4186,7 @@ div img {
 
 .success-submit-btn:hover {
   background: #2563eb;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.3);
 }
 
@@ -4276,7 +4276,7 @@ div img {
 .btn-faq-contact:hover {
   background: #2563eb;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.4);
 }
 
@@ -4445,7 +4445,7 @@ div img {
 .btn-contact-primary:hover {
   background: #2563eb;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .btn-contact-secondary {
@@ -4468,7 +4468,7 @@ div img {
 .btn-contact-secondary:hover {
   background: #4188FF;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Contact Form Section */
@@ -4562,7 +4562,7 @@ div img {
 
 .contact-submit-btn:hover {
   background: #2563eb;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 20px rgba(65, 136, 255, 0.3);
 }
 

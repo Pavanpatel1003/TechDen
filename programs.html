@@ -46,27 +46,27 @@
 
         <!-- Navigation Menu -->
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./programs.html">Programs</a>
+              <a class="nav-link hover-box" href="./programs.html">Programs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#facilities">Facilities</a>
+              <a class="nav-link" href="./facilities.html">Facilities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#community">Community</a>
+              <a class="nav-link" href="./community.html">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#partners">Partners</a>
+              <a class="nav-link" href="">Partners</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover-box" href="./blog.html">Blogs</a>
+              <a class="nav-link" href="./blog.html">Blogs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./FAQ.html">FAQs</a>
@@ -101,7 +101,7 @@
 
   <!-- PROGRAMS SECTION -->
   <section class="programs-section">
-    <div class="container-fluid">
+    <div class="container">
 
       <!-- Programs Accordion -->
       <div class="programs-accordion">
@@ -122,7 +122,7 @@
                       Cohort-based support for bold hardware and IoT founders, featuring mentorship, workspace,
                       peer learning, and the tools to turn prototypes into scalable products.
                     </p>
-                    <a href="#" class="program-apply-btn">Apply now →</a>
+                    <a href="#" class="program-apply-btn">Apply now <span>&#8599;</span></a>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                       Fast-track your IoT startup with specialized resources, industry partnerships, and
                       comprehensive support to scale your connected device solutions.
                     </p>
-                    <a href="#" class="program-apply-btn">Apply now →</a>
+                    <a href="#" class="program-apply-btn">Apply now <span>&#8599;</span></a>
                   </div>
                 </div>
               </div>
@@ -170,7 +170,7 @@
                       Connect with experienced entrepreneurs, industry leaders, and technical experts
                       to accelerate your startup journey with personalized guidance and support.
                     </p>
-                    <a href="#" class="program-apply-btn">Join Network →</a>
+                    <a href="#" class="program-apply-btn">Join Network <span>&#8599;</span></a>
                   </div>
                 </div>
               </div>
@@ -194,7 +194,7 @@
                       Partner with leading corporations to solve real-world challenges while scaling your startup.
                       Access enterprise customers, resources, and strategic partnerships.
                     </p>
-                    <a href="#" class="program-apply-btn">Learn More →</a>
+                    <a href="#" class="program-apply-btn">Learn More <span>&#8599;</span></a>
                   </div>
                 </div>
               </div>
@@ -218,7 +218,7 @@
                       Engage with the broader innovation ecosystem through workshops, networking events, and
                       educational programs designed to foster collaboration and knowledge sharing.
                     </p>
-                    <a href="#" class="program-apply-btn">Join Community →</a>
+                    <a href="#" class="program-apply-btn">Join Community <span>&#8599;</span></a>
                   </div>
                 </div>
               </div>
@@ -230,79 +230,74 @@
     </div>
   </section>
 
-  <!-- FAQ SECTION -->
-  <section class="faq-section">
+  <!-- FAQ MAIN SECTION -->
+  <section class="faq-main-section">
     <div class="container">
-      <div class="row">
+      <div class="faq-main-content">
 
-        <!-- Left Column - FAQ Header -->
-        <div class="col-lg-5">
-          <div class="faq-header">
-            <div class="faq-icon">
-              <img src="./images/star.png" alt="" srcset="">
-            </div>
-            <h2 class="heading-xl text-primary">Frequently Asked Questions</h2>
-            <p class="text-lg text-secondary spacing-lg">
-              Trusted in more than 100 countries and 4 million customers.
-            </p>
-            <a href="#" class="btn-primary-custom">Contact us</a>
+        <!-- FAQ Header -->
+        <div class="faq-main-header">
+          <div class="faq-main-icon">
+            <img src="./images/star.png" alt="FAQ Icon">
           </div>
+          <h1 class="faq-main-title">Frequently Asked <br>Questions</h1>
+          <p class="faq-main-subtitle">
+            Trusted in more than 100 countries and 4<br> million customers.
+          </p>
+          <a href="contact.html" class="btn-faq-contact">Contact us</a>
         </div>
 
-        <!-- Right Column - FAQ Items -->
-        <div class="col-lg-7">
-          <div class="faq-accordion">
+        <!-- FAQ Accordion -->
+        <div class="faq-main-accordion">
 
-            <!-- FAQ Item 1 -->
-            <div class="faq-item">
-              <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">
-                <h3 class="question-text">Who can apply?</h3>
-                <i class="fas fa-chevron-up faq-arrow"></i>
-              </div>
-              <div class="collapse" id="faq1">
-                <div class="faq-answer">
-                  <p class="text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ante vitae
-                    purus tempus egestas. Curabitur euismod purus sed elit faucibus. Vivamus in
-                    ante sed libero feugiat fermentum.
-                  </p>
-                </div>
+          <!-- FAQ Item 1 -->
+          <div class="faq-main-item">
+            <div class="faq-main-question" data-bs-toggle="collapse" data-bs-target="#faqMain1" aria-expanded="true">
+              <h3 class="faq-main-question-text">Who can apply?</h3>
+              <i class="fas fa-chevron-up faq-main-arrow"></i>
+            </div>
+            <div class="collapse show" id="faqMain1">
+              <div class="faq-main-answer">
+                <p class="faq-main-answer-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ante vitae
+                  purus tempus egestas. Curabitur euismod purus sed elit faucibus. Vivamus in
+                  ante sed libero feugiat fermentum.
+                </p>
               </div>
             </div>
+          </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="faq-item">
-              <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
-                <h3 class="question-text">What is included?</h3>
-                <i class="fas fa-chevron-up faq-arrow"></i>
-              </div>
-              <div class="collapse" id="faq2">
-                <div class="faq-answer">
-                  <p class="text-base">
-                    Our programs include access to state-of-the-art facilities, expert mentorship,
-                    funding opportunities, networking events, and comprehensive business development support.
-                  </p>
-                </div>
+          <!-- FAQ Item 2 -->
+          <div class="faq-main-item">
+            <div class="faq-main-question" data-bs-toggle="collapse" data-bs-target="#faqMain2" aria-expanded="false">
+              <h3 class="faq-main-question-text">What is included?</h3>
+              <i class="fas fa-chevron-up faq-main-arrow"></i>
+            </div>
+            <div class="collapse" id="faqMain2">
+              <div class="faq-main-answer">
+                <p class="faq-main-answer-text">
+                  Our programs include access to state-of-the-art facilities, expert mentorship,
+                  funding opportunities, networking events, and comprehensive business development support.
+                </p>
               </div>
             </div>
+          </div>
 
-            <!-- FAQ Item 3 -->
-            <div class="faq-item">
-              <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
-                <h3 class="question-text">How does selection work?</h3>
-                <i class="fas fa-chevron-up faq-arrow"></i>
-              </div>
-              <div class="collapse" id="faq3">
-                <div class="faq-answer">
-                  <p class="text-base">
-                    Our selection process involves application review, initial screening, pitch presentation,
-                    and final interviews with our expert panel. We evaluate based on innovation potential,
-                    team strength, and market opportunity.
-                  </p>
-                </div>
+          <!-- FAQ Item 3 -->
+          <div class="faq-main-item">
+            <div class="faq-main-question" data-bs-toggle="collapse" data-bs-target="#faqMain3" aria-expanded="false">
+              <h3 class="faq-main-question-text">How does selection work?</h3>
+              <i class="fas fa-chevron-up faq-main-arrow"></i>
+            </div>
+            <div class="collapse" id="faqMain3">
+              <div class="faq-main-answer">
+                <p class="faq-main-answer-text">
+                  Our selection process involves application review, initial screening, pitch presentation,
+                  and final interviews with our expert panel. We evaluate based on innovation potential,
+                  team strength, and market opportunity.
+                </p>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -311,14 +306,16 @@
   </section>
 
   <!-- JOIN COHORT SECTION -->
-  <section class="join-cohort-section">
+  <section class="">
     <div class="container">
-      <div class="cohort-content">
-        <h2 class="cohort-title">Join our next cohort or connect with a mentor today</h2>
+      <div class="join-cohort-section">
+        <div class="cohort-content">
+          <h2 class="cohort-title">Join our next cohort or connect with a mentor today</h2>
 
-        <div class="cohort-buttons">
-          <a href="#" class="btn-cohort-primary">Check out mentors</a>
-          <a href="#" class="btn-cohort-secondary">Apply now →</a>
+          <div class="cohort-buttons">
+            <a href="#" class="btn-cohort-primary">Check out mentors</a>
+            <a href="#" class="btn-cohort-secondary">Apply now →</a>
+          </div>
         </div>
       </div>
     </div>
@@ -326,12 +323,14 @@
 
   <!-- ================= FOOTER SECTION START ================= -->
   <footer class="footer-section">
-    <div class="container-fluid">
+    <div class="container">
       <div class="footer-content">
+
+        <!-- Footer Links -->
         <div class="footer-links">
           <div class="footer-column">
-            <a href="#home" class="footer-link">Home</a>
-            <a href="#about" class="footer-link">About Us</a>
+            <a href="./index.html" class="footer-link">Home</a>
+            <a href="./about.html" class="footer-link">About Us</a>
             <a href="#partners" class="footer-link">Partners</a>
             <a href="#contact" class="footer-link">Contact Us</a>
           </div>

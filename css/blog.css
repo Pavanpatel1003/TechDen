@@ -252,7 +252,7 @@ body {
 
 .blog-category-tag {
     color: #3B82F6;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 12px;
     display: block;
@@ -344,7 +344,7 @@ body {
 
 /* Blog section container */
 .blog-section {
-    background: #f8fafc;
+    /* background: #f8fafc; */
     padding: 80px 0;
 }
 
@@ -998,7 +998,7 @@ body {
 .social-icon:hover {
     background: #3B82F6;
     color: white;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.05);
 }
 
 /* Decorative Elements */

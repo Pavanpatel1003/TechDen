@@ -49,11 +49,12 @@ body {
 /* Menu hover effect with corner brackets */
 .navbar-nav .nav-link:hover {
   color: #4188FF;
-  border-radius: 4px;
+  margin: 0 8px;
   position: relative;
+  font-size: 16px;
+  padding: 12px 20px !important;
+  transition: all 0.3s ease;
   font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.5px;
 }
 
 .navbar-nav .nav-link:hover::before {
@@ -178,7 +179,7 @@ body {
 ========================= */
 
 .footer-section {
-  background: #f8fafc;
+  /* background: #f8fafc; */
   padding: 80px 0 40px 40px;
   position: relative;
   overflow: hidden;
@@ -197,7 +198,7 @@ body {
 /* Footer Links */
 .footer-links {
   display: flex;
-  gap: 80px;
+  gap: 200px;
 }
 
 .footer-column {
@@ -259,7 +260,7 @@ body {
 .social-icon:hover {
   background: #3B82F6;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Decorative Elements */
@@ -298,7 +299,7 @@ body {
 
 .footer-address {
   font-size: 14px;
-  color: #1e293b;
+  color: #2E2E2E;
   margin-bottom: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -306,9 +307,10 @@ body {
 
 .footer-copyright {
   font-size: 14px;
-  color: #64748b;
-  margin: 0;
-  font-weight: 500;
+  color: #2E2E2E;
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 /* Responsive adjustments */
@@ -416,6 +418,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
+  min-width: 132px;
   transition: all 0.3s ease;
   display: inline-block;
 }
@@ -423,7 +426,7 @@ body {
 .btn-faq-contact:hover {
   background: #7c3aed;
   color: #ffffff;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* FAQ Accordion */
@@ -548,7 +551,7 @@ body {
 .btn-primary-custom:hover {
   background: #2563eb;
   color: #ffffff;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .btn-outline-custom {

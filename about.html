@@ -12,6 +12,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <!-- Google Fonts - Product Sans Alternative -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +51,7 @@
 
                 <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Home</a>
                         </li>
@@ -57,10 +62,10 @@
                             <a class="nav-link" href="#facilities">Facilities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#community">Community</a>
+                            <a class="nav-link" href="./community.html">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#partners">Partners</a>
+                            <a class="nav-link" href="">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hover-box" href="./about.html">About us</a>
@@ -97,7 +102,9 @@
                         At TechDen USA, we provide cutting-edge spaces, expert mentorship, and a vibrant
                         ecosystem for founders to transform ideas into global businesses.
                     </p>
-                    <a href="#" class="btn btn-primary-custom">Join The Community</a>
+                    <div>
+                        <a href="#" class="btn btn-join">Join The Community</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,8 +126,10 @@
                 <div class="col-lg-6">
                     <div class="about-content">
                         <div class="about-badge">
-                            <i class="fas fa-star"></i>
-                            <span>Fearless Beginnings</span>
+                            <div class="about-badge-img">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <div>Fearless Beginnings</div>
                         </div>
                         <h2 class="about-title">The Spark Behind Our Journey</h2>
                         <p class="about-description">
@@ -149,8 +158,10 @@
                 <div class="col-lg-6 order-lg-2">
                     <div class="about-content">
                         <div class="about-badge">
-                            <i class="fas fa-star"></i>
-                            <span>A Community That Elevates</span>
+                            <div class="about-badge-img">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <div>A Community That Elevates</div>
                         </div>
                         <h2 class="about-title">Shaping Tomorrow</h2>
                         <p class="about-description">
@@ -178,8 +189,10 @@
                 <div class="col-lg-6">
                     <div class="about-content">
                         <div class="about-badge">
-                            <i class="fas fa-star"></i>
-                            <span>Blueprints for Tomorrow</span>
+                            <div class="about-badge-img">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <div>Blueprints for Tomorrow</div>
                         </div>
                         <h2 class="about-title">Fueling Ambition, Building Impact</h2>
                         <p class="about-description">
@@ -214,6 +227,8 @@
                         <img src="./images/space1.jpg" alt="Community Support">
                         <div class="innovation-card-overlay">
                             <h3>Community Support</h3>
+                            <p>Connect with like-minded innovators and build lasting partnerships in our collaborative
+                                environment.</p>
                         </div>
                     </div>
                 </div>
@@ -233,6 +248,8 @@
                         <img src="./images/space3.jpg" alt="Expert Guidance">
                         <div class="innovation-card-overlay">
                             <h3>Expert Guidance</h3>
+                            <p>Get mentorship from industry experts and experienced entrepreneurs to accelerate your
+                                growth.</p>
                         </div>
                     </div>
                 </div>
@@ -242,6 +259,8 @@
                         <img src="./images/space4.jpg" alt="Real-World Testing">
                         <div class="innovation-card-overlay">
                             <h3>Real-World Testing</h3>
+                            <p>Test your products in real market conditions with access to our testing facilities and
+                                user feedback.</p>
                         </div>
                     </div>
                 </div>
@@ -253,7 +272,7 @@
     <section class="unlock-section">
         <div class="container">
             <div class="unlock-header">
-                <span class="section-badge">What We Offer</span>
+                <div class="section-badge">What We Offer</div>
                 <h2 class="section-title">Unlock Everything You Need to Build, Launch, and Scale</h2>
             </div>
 
@@ -264,11 +283,11 @@
 
                 <div class="unlock-card unlock-card-content">
                     <div class="unlock-icon">
-                        <i class="fas fa-plus"></i>
+                        <img src="./images/star-white.png" alt="">
                     </div>
                     <h3>Programs & Accelerators</h3>
                     <p>Structured programs for growth, expert mentorship, and networking opportunities.</p>
-                    <a href="#" class="unlock-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="unlock-btn">Apply Now <span>&#8599;</span></a>
                 </div>
 
                 <div class="unlock-card unlock-card-image">
@@ -277,20 +296,20 @@
 
                 <div class="unlock-card unlock-card-content">
                     <div class="unlock-icon">
-                        <i class="fas fa-plus"></i>
+                        <img src="./images/star-white.png" alt="">
                     </div>
                     <h3>Community & Events</h3>
                     <p>Connect with founders, mentors, investors, and partners at regular events.</p>
-                    <a href="#" class="unlock-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="unlock-btn">Apply Now <span>&#8599;</span></a>
                 </div>
 
                 <div class="unlock-card unlock-card-content">
                     <div class="unlock-icon">
-                        <i class="fas fa-plus"></i>
+                        <img src="./images/star-white.png" alt="">
                     </div>
                     <h3>Flexible Office & Lab Spaces</h3>
                     <p>Modern workspaces and labs tailored for tech and hardware startup teams.</p>
-                    <a href="#" class="unlock-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="unlock-btn">Apply Now <span>&#8599;</span></a>
                 </div>
 
                 <div class="unlock-card unlock-card-image">
@@ -299,11 +318,11 @@
 
                 <div class="unlock-card unlock-card-content">
                     <div class="unlock-icon">
-                        <i class="fas fa-plus"></i>
+                        <img src="./images/star-white.png" alt="">
                     </div>
                     <h3>Prototyping Tools</h3>
                     <p>Access to advanced equipment and facilities for rapid product development.</p>
-                    <a href="#" class="unlock-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="unlock-btn">Apply Now <span>&#8599;</span></a>
                 </div>
 
                 <div class="unlock-card unlock-card-image">
@@ -317,7 +336,7 @@
     <section class="visionaries-section">
         <div class="container">
             <div class="visionaries-header">
-                <span class="section-badge">What We Offer</span>
+                <div class="section-badge">What We Offer</div>
                 <h2 class="section-title">Meet the Visionaries Powering TechDen</h2>
             </div>
 
@@ -415,24 +434,24 @@
                 <h3 class="partners-title">PARTNERS</h3>
             </div>
 
-            <div class="partners-grid">
+            <div class="partners-slider">
                 <div class="partner-logo">
-                    <img src="./images/logos_google.png" alt="Dropbox">
+                    <img src="./images/icon/sdropbox.png" alt="Dropbox">
                 </div>
                 <div class="partner-logo">
-                    <img src="./images/logos_google.png" alt="Coinbase">
+                    <img src="./images/icon/scoinbase.png" alt="Coinbase">
                 </div>
                 <div class="partner-logo">
-                    <img src="./images/logos_google.png" alt="Google">
+                    <img src="./images/icon/sgoogle.png" alt="Google">
                 </div>
                 <div class="partner-logo">
-                    <img src="./images/logos_google.png" alt="Microsoft">
+                    <img src="./images/icon/smicrosoft.png" alt="Microsoft">
                 </div>
                 <div class="partner-logo">
-                    <img src="./images/logos_google.png" alt="Slack">
+                    <img src="./images/icon/sslack.png" alt="Slack">
                 </div>
                 <div class="partner-logo">
-                    <img src="./images/logos_google.png" alt="Zoom">
+                    <img src="./images/icon/szoom.png" alt="Zoom">
                 </div>
             </div>
         </div>
@@ -469,8 +488,8 @@
                 <!-- Footer Links -->
                 <div class="footer-links">
                     <div class="footer-column">
-                        <a href="#home" class="footer-link">Home</a>
-                        <a href="#about" class="footer-link">About Us</a>
+                        <a href="./index.html" class="footer-link">Home</a>
+                        <a href="./about.html" class="footer-link">About Us</a>
                         <a href="#partners" class="footer-link">Partners</a>
                         <a href="#contact" class="footer-link">Contact Us</a>
                     </div>
@@ -517,7 +536,82 @@
     </footer>
     <!-- ================= FOOTER SECTION END ================= -->
 
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Partners Slick Slider
+        $(document).ready(function () {
+            $('.partners-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                speed: 1000,
+                infinite: true,
+                arrows: false,
+                dots: false,
+                pauseOnHover: true,
+                cssEase: 'linear',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            // Typing Animation on Scroll
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const cards = entry.target.querySelectorAll('.innovation-card');
+                        cards.forEach((card, index) => {
+                            const title = card.querySelector('.innovation-card-overlay h3');
+                            if (title) {
+                                title.style.animationDelay = `${0.5 + (index * 0.5)}s`;
+                                title.classList.add('start-typing');
+                            }
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const innovationSection = document.querySelector('.innovation-gap-section');
+            if (innovationSection) {
+                observer.observe(innovationSection);
+            }
+        });
+    </script>
 
 </body>
 

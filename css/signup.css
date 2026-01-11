@@ -196,8 +196,8 @@
 .signup-btn:hover {
     background: linear-gradient(263.25deg, #F240FF -16.37%, #4188FF 150.97%);
     color: #fff;
-    box-shadow: 0 4px 12px rgba(65, 136, 255, 0.3);
-    transform: translateY(-2px);
+    /* box-shadow: 0 4px 12px rgba(65, 136, 255, 0.3); */
+    transform: translateY(-2px) scale(1.05);
 }
 
 .signup-btn:focus {
@@ -230,7 +230,7 @@
 
 /* ========== SIGNUP TEXT STYLING ========== */
 .signup-text {
-    letter-spacing: 1.5px;
+    /* letter-spacing: 1.5px; */
 }
 
 .signup-link {
