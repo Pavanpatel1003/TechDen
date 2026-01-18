@@ -18,11 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- ========== CUSTOM CSS ========== -->
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- ========== COMMON CSS ========== -->
+    <link rel="stylesheet" href="css/common/style.css">
+    <link rel="stylesheet" href="css/common/responsive.css">
 </head>
 
-<body class="scrollable"></body>
+<body class="scrollable index-page"></body>
 
 <!-- ================= HERO SECTION START ================= -->
 <section class="hero">
@@ -53,7 +54,7 @@
                         <a class="nav-link" href="./programs.html">Programs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./">Facilities</a>
+                        <a class="nav-link" href="./facilities.html">Facilities</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./community.html">Community</a>
@@ -101,7 +102,7 @@
 
 <!-- ================= STARTUPS SECTION START ================= -->
 <section id="startups" class="startups-section py-5">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Section Header -->
         <div class="text-center spacing-xl">
             <h2 class="section-heading heading-xl spacing-sm">Startups That Began Here</h2>
@@ -176,7 +177,7 @@
 <section id="blogs" class="blog-section">
     <div class="container">
         <div class="blog-section-header">
-            <h2 class="section-heading blog-section-title">Startup Insights & Success Stories</h2>
+            <h2 class="section-heading main-section-title">Startup Insights & Success Stories</h2>
             <p class="section-description text-lg spacing-lg">
                 Explore the latest trends, founder journeys, innovation tips, and news from <br>
                 the world of emerging technology—all powered by the TechDen community.
@@ -208,7 +209,7 @@
                                             <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
                                             <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
                                         </div>
-                                        <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                                        <a href="#" class="common-read-btn">Read more <span>&#8599;</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +230,7 @@
                                             <img src="./images/user2.jpg" alt="Alex Liu" class="blog-author-avatar">
                                             <span class="blog-meta-text">By Alex Liu | Oct 2025 | 4 min read</span>
                                         </div>
-                                        <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                                        <a href="#" class="common-read-btn">Read more <span>&#8599;</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +256,7 @@
                                             <img src="./images/user1.jpg" alt="Sarah Chen" class="blog-author-avatar">
                                             <span class="blog-meta-text">By Sarah Chen | Dec 2025 | 6 min read</span>
                                         </div>
-                                        <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                                        <a href="#" class="common-read-btn">Read more <span>&#8599;</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +277,7 @@
                                             <img src="./images/user2.jpg" alt="Mike Johnson" class="blog-author-avatar">
                                             <span class="blog-meta-text">By Mike Johnson | Dec 2025 | 8 min read</span>
                                         </div>
-                                        <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                                        <a href="#" class="common-read-btn">Read more <span>&#8599;</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +302,7 @@
                                             <img src="./images/user1.jpg" alt="David Park" class="blog-author-avatar">
                                             <span class="blog-meta-text">By David Park | Jan 2026 | 7 min read</span>
                                         </div>
-                                        <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                                        <a href="#" class="common-read-btn">Read more <span>&#8599;</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +322,7 @@
                                             <img src="./images/user2.jpg" alt="Lisa Wang" class="blog-author-avatar">
                                             <span class="blog-meta-text">By Lisa Wang | Jan 2026 | 5 min read</span>
                                         </div>
-                                        <a href="#" class="blog-read-btn">Read more <span>&#8599;</span></a>
+                                        <a href="#" class="common-read-btn">Read more <span>&#8599;</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +420,7 @@
 
 <!-- ================= MEMBERSHIP SECTION START ================= -->
 <section id="programs" class="membership-section">
-    <div class="container-fluid">
+    <div class="container">
         <div class="membership-header">
             <h2 class="section-heading heading-xl spacing-sm">Flexible Membership Options</h2>
             <p class="section-description text-lg spacing-lg">
@@ -819,25 +820,23 @@
 
 <!-- ================= FOOTER SECTION START ================= -->
 <footer class="footer-section">
-    <div class="container-fluid">
+    <div class="container">
         <div class="footer-content">
-            <!-- Footer Links -->
             <div class="footer-links">
                 <div class="footer-column">
-                    <a href="./index.html" class="footer-link">Home</a>
+                    <a href="./index.html" class="footer-link active">Home</a>
                     <a href="./about.html" class="footer-link">About Us</a>
                     <a href="#partners" class="footer-link">Partners</a>
-                    <a href="#contact" class="footer-link">Contact Us</a>
+                    <a href="./contact.html" class="footer-link">Contact Us</a>
                 </div>
                 <div class="footer-column">
-                    <a href="#facilities" class="footer-link">Facilities</a>
-                    <a href="#programs" class="footer-link">Programs</a>
+                    <a href="./facilities.html" class="footer-link">Facilities</a>
+                    <a href="./programs.html" class="footer-link">Programs</a>
                     <a href="#membership" class="footer-link">Membership Plans</a>
                     <a href="#tour" class="footer-link">Book a Tour</a>
                 </div>
             </div>
 
-            <!-- Newsletter Section -->
             <div class="footer-newsletter">
                 <h3 class="newsletter-title">Newsletter</h3>
                 <div class="social-icons">
@@ -853,17 +852,22 @@
                 </div>
             </div>
 
-            <!-- Decorative Elements -->
             <div class="footer-decoration">
-                <img src="./images/footer-img.png" alt="Footer Decoration" class="img-fluid">
+                <div>
+                    <img src="./images/footer-img.png" alt="Footer Decoration" class="img-fluid">
+                </div>
             </div>
         </div>
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
+            <p class="footer-address">
+                123, PARK COLONY, NEW DELHI, INDIA 110016 / INFO@PM.COM / +91 98323 23255
+            </p>
             <div class="footer-info">
-                <p class="footer-address">123, PARK COLONY, NEW DELHI, INDIA 110016 / INFO@PM.COM / +91 98323 23255</p>
-                <p class="footer-copyright">COPYRIGHT © 2023 PM MEDIA. ALL RIGHTS RESERVED.</p>
+                <p class="footer-copyright">
+                    COPYRIGHT © 2023 PM MEDIA. ALL RIGHTS RESERVED.
+                </p>
             </div>
         </div>
     </div>

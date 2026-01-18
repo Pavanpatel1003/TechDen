@@ -13,11 +13,13 @@
     <!-- ========== FONT AWESOME ========== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- ========== CUSTOM CSS ========== -->
-    <link rel="stylesheet" href="./css/signup.css">
+    <!-- ========== COMMON CSS ========== -->
+    <link rel="stylesheet" href="css/common/style.css">
+    <link rel="stylesheet" href="css/common/responsive.css">
+
 </head>
 
-<body>
+<body class="signup-page">
 
     <!-- ================= SIGNUP SECTION START ================= -->
     <section class="vh-100 overflow-hidden">
@@ -62,7 +64,7 @@
                         <form>
                             <!-- FULL NAME FIELD -->
                             <div class="mb-3">
-                                <label for="fullName" class="form-label fw-semibold text-dark">
+                                <label for="fullName" class="form-label dark-text">
                                     Full Name
                                 </label>
                                 <div class="position-relative">
@@ -75,7 +77,7 @@
 
                             <!-- EMAIL FIELD -->
                             <div class="mb-3">
-                                <label for="emailInput" class="form-label fw-semibold text-dark">
+                                <label for="emailInput" class="form-label dark-text">
                                     Email Address
                                 </label>
                                 <div class="position-relative">
@@ -89,7 +91,7 @@
 
                             <!-- PASSWORD FIELD -->
                             <div class="mb-3">
-                                <label for="password" class="form-label fw-semibold text-dark">
+                                <label for="password" class="form-label dark-text">
                                     Create Password
                                 </label>
                                 <div class="position-relative">
@@ -108,7 +110,7 @@
 
                             <!-- CONFIRM PASSWORD FIELD -->
                             <div class="mb-3">
-                                <label for="confirmPassword" class="form-label fw-semibold text-dark">
+                                <label for="confirmPassword" class="form-label dark-text">
                                     Confirm Password
                                 </label>
                                 <div class="position-relative">
@@ -127,7 +129,7 @@
 
                             <!-- ROLE DROPDOWN -->
                             <div class="mb-3">
-                                <label class="form-label fw-semibold text-dark">Role</label>
+                                <label class="form-label dark-text">Role</label>
                                 <div class="custom-dropdown">
                                     <div class="dropdown-selected" onclick="toggleDropdown('roleDropdown')">
                                         <i
@@ -159,7 +161,7 @@
 
                             <!-- MEMBERSHIP PLANS DROPDOWN -->
                             <div class="mb-4">
-                                <label class="form-label fw-semibold text-dark">Membership Plan</label>
+                                <label class="form-label dark-text">Membership Plan</label>
                                 <div class="custom-dropdown">
                                     <div class="dropdown-selected" onclick="toggleDropdown('membershipDropdown')">
                                         <i
@@ -202,7 +204,7 @@
                             </div>
 
                             <!-- CREATE ACCOUNT BUTTON -->
-                            <button type="button" class="btn w-100 rounded-pill mb-4 signup-btn"
+                            <button type="button" class="btn w-100 rounded-pill mb-4 user-btn"
                                 onclick="createAccount()">
                                 Create Account
                             </button>

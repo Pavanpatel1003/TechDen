@@ -19,13 +19,24 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
+  <!-- ========== COMMON CSS ========== -->
+  <link rel="stylesheet" href="css/common/style.css">
+  <link rel="stylesheet" href="css/common/responsive.css">
+
   <!-- Custom CSS -->
-  <link href="css/blog.css" rel="stylesheet">
+  <!-- <link href="css/blog.css" rel="stylesheet"> -->
 </head>
 
-<body class="scrollable">
+<body class="scrollable blog-detail-page">
 
-  <!-- ================= HERO SECTION START ================= -->
+    <!-- ================= HERO SECTION START ================= -->
   <section class="hero">
     <!-- ================= NAVBAR START ================= -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -54,13 +65,13 @@
               <a class="nav-link" href="./programs.html">Programs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#facilities">Facilities</a>
+              <a class="nav-link" href="./facilities.html">Facilities</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./community.html">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Partners</a>
+              <a class="nav-link" href="#partners">Partners</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About us</a>
@@ -130,7 +141,7 @@
 
           <!-- Section 1 -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Make Experimentation a Daily Habit Your Destination</h2>
+            <h2 class="main-section-titles-blog">Make Experimentation a Daily Habit Your Destination</h2>
             <p class="blog-section-text">
               Innovation starts when teams are empowered to prototype and test early.
               Using dedicated incubator tools—like 3D printers, rapid prototyping labs,
@@ -141,7 +152,7 @@
 
           <!-- Section 2 -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Plug Into a Supportive Community</h2>
+            <h2 class="main-section-titles-blog">Plug Into a Supportive Community</h2>
             <p class="blog-section-text">
               No founder builds alone. At modern incubators, learning happens via
               mentor sessions, open lab hours, and daily feedback exchanges. Whether it's
@@ -152,7 +163,7 @@
 
           <!-- Additional Content Sections -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Leverage Advanced Technology Infrastructure</h2>
+            <h2 class="main-section-titles-blog">Leverage Advanced Technology Infrastructure</h2>
             <p class="blog-section-text">
               Modern workplaces are being transformed by cutting-edge technology infrastructure.
               From cloud computing and AI-powered analytics to IoT devices and automation tools,
@@ -162,7 +173,7 @@
           </div>
 
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Foster a Culture of Continuous Learning</h2>
+            <h2 class="main-section-titles-blog">Foster a Culture of Continuous Learning</h2>
             <p class="blog-section-text">
               The rapid pace of technological change requires a workforce that's adaptable and
               continuously learning. Companies are investing in upskilling programs, online learning
@@ -180,7 +191,7 @@
 
           <!-- Move Fast, Build Smarter Section -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Move Fast, Build Smarter</h2>
+            <h2 class="main-section-titles-blog">Move Fast, Build Smarter</h2>
             <p class="blog-section-text">
               Markets move quickly—your workflows should, too. Access to in-house
               hardware labs, flexible workspace, and curated programs can trim months
@@ -201,7 +212,7 @@
 
           <!-- Stay Safe and Healthy Section -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Stay Safe and Healthy</h2>
+            <h2 class="main-section-titles-blog">Stay Safe and Healthy</h2>
             <p class="blog-section-text">
               Document your testing, track outcomes, and share results across your
               team. Every experiment—win or fail—builds collective wisdom and informs
@@ -212,7 +223,7 @@
 
           <!-- Learn From Each Launch Section -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Learn From Each Launch</h2>
+            <h2 class="main-section-titles-blog">Learn From Each Launch</h2>
             <p class="blog-section-text">
               Document your testing, track outcomes, and share results across your
               team. Every experiment—win or fail—builds collective wisdom and informs
@@ -223,7 +234,7 @@
 
           <!-- Conclusion Section -->
           <div class="blog-content-section">
-            <h2 class="blog-section-titles">Conclusion:</h2>
+            <h2 class="main-section-titles-blog">Conclusion:</h2>
             <p class="blog-section-text">
               A startup's innovation edge comes from iterating quickly, leveraging a
               diverse community, and turning ideas into real solutions—all within an
@@ -242,161 +253,150 @@
   <!-- MORE BLOGS SECTION -->
   <section class="more-blogs-section">
     <div class="container">
+      <div class="more-blogs-header">
+        <h2 class="more-blogs-title">More blogs</h2>
+      </div>
 
-
-      <div class="more-blogs-slider-container">
-        <div class="more-blogs-header">
-          <h2 class="more-blogs-title">More blogs</h2>
-        </div>
-        <div class="more-blogs-slider-wrapper">
-          <div class="more-blogs-slider-track" id="moreBlogsSliderTrack">
-
-            <!-- Slide 1 -->
-            <div class="more-blogs-slide">
-              <div class="more-blogs-grid-container">
-                <div class="more-blogs-grid-item">
-                  <div class="blog-card">
-                    <div class="blog-image-containers">
-                      <img src="./images/moreblog1.png" alt="Community Networks">
-                    </div>
-                    <div class="blog-card-content">
-                      <span class="blog-category-tag">The Power of Community: Why Startup Networks Matter</span>
-                      <h3 class="blog-title">Building relationships with founders, mentors, and industry partners gives
-                        startups a competitive edge.</h3>
-                      <div class="blog-footer">
-                        <div class="blog-meta">
-                          <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
-                          <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
-                        </div>
-                        <a href="blog-detail.html" class="blog-read-btn">Read more <span>&#8599;</span></a>
-                      </div>
-                    </div>
-                  </div>
+      <!-- Slick Slider for Blog Cards -->
+      <div class="more-blogs-slick-slider">
+        <!-- Blog Card 1 -->
+        <div class="blog-card-wrapper">
+          <div class="blog-card">
+            <div class="blog-image-containers">
+              <img src="./images/moreblog1.png" alt="Community Networks">
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-category-tag">The Power of Community: Why Startup Networks Matter</span>
+              <h3 class="blog-title">Building relationships with founders, mentors, and industry partners gives
+                startups a competitive edge.</h3>
+              <div class="blog-footer">
+                <div class="blog-meta">
+                  <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
+                  <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
                 </div>
-
-                <div class="more-blogs-grid-item">
-                  <div class="blog-card">
-                    <div class="blog-image-containers">
-                      <img src="./images/moreblog2.png" alt="Accelerator vs Incubator">
-                    </div>
-                    <div class="blog-card-content">
-                      <span class="blog-category-tag">Accelerator vs. Incubator: Which Path Fits Your Idea?</span>
-                      <h3 class="blog-title">Understand the differences and select the right program for your venture's
-                        stage.</h3>
-                      <div class="blog-footer">
-                        <div class="blog-meta">
-                          <img src="./images/user2.jpg" alt="Jane Smith" class="blog-author-avatar">
-                          <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
-                        </div>
-                        <a href="./blog-detail.html" class="blog-read-btn">Read more <span>&#8599;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="more-blogs-grid-item">
-                  <div class="blog-card">
-                    <div class="blog-image-containers">
-                      <img src="./images/moreblog3.png" alt="Prototyping Tools">
-                    </div>
-                    <div class="blog-card-content">
-                      <span class="blog-category-tag">Prototyping 101: Essential Tools for Early Stage Founders</span>
-                      <h3 class="blog-title">A guide to affordable, effective equipment available at TechDen's
-                        fabrication lab.</h3>
-                      <div class="blog-footer">
-                        <div class="blog-meta">
-                          <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
-                          <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
-                        </div>
-                        <a href="blog-detail.html" class="blog-read-btn">Read more <span>&#8599;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a href="blog-detail.html" class="common-read-btn">Read more <span>&#8599;</span></a>
               </div>
             </div>
-
-            <!-- Slide 2 -->
-            <div class="more-blogs-slide">
-              <div class="more-blogs-grid-container">
-                <div class="more-blogs-grid-item">
-                  <div class="blog-card">
-                    <div class="blog-image-containers">
-                      <img src="./images/moreblog1.png" alt="Funding Strategies">
-                    </div>
-                    <div class="blog-card-content">
-                      <span class="blog-category-tag">Funding Strategies for Hardware Startups</span>
-                      <h3 class="blog-title">Navigate the unique challenges of raising capital for physical product
-                        development.</h3>
-                      <div class="blog-footer">
-                        <div class="blog-meta">
-                          <img src="./images/user2.jpg" alt="Jane Smith" class="blog-author-avatar">
-                          <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
-                        </div>
-                        <a href="blog-detail.html" class="blog-read-btn">Read more <span>&#8599;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="more-blogs-grid-item">
-                  <div class="blog-card">
-                    <div class="blog-image-containers">
-                      <img src="./images/moreblog2.png" alt="Market Validation">
-                    </div>
-                    <div class="blog-card-content">
-                      <span class="blog-category-tag">Market Validation: Testing Your Idea Before You Build</span>
-                      <h3 class="blog-title">Learn cost-effective methods to validate your startup concept with real
-                        customers.</h3>
-                      <div class="blog-footer">
-                        <div class="blog-meta">
-                          <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
-                          <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
-                        </div>
-                        <a href="blog-detail.html" class="blog-read-btn">Read more <span>&#8599;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="more-blogs-grid-item">
-                  <div class="blog-card">
-                    <div class="blog-image-containers">
-                      <img src="./images/moreblog3.png" alt="Team Building">
-                    </div>
-                    <div class="blog-card-content">
-                      <span class="blog-category-tag">Building Your Dream Team: Hiring for Startups</span>
-                      <h3 class="blog-title">Strategies for attracting top talent when you're competing with established
-                        companies.</h3>
-                      <div class="blog-footer">
-                        <div class="blog-meta">
-                          <img src="./images/user2.jpg" alt="Jane Smith" class="blog-author-avatar">
-                          <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
-                        </div>
-                        <a href="blog-detail.html" class="blog-read-btn">Read more <span>&#8599;</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
 
-        <!-- Navigation -->
-        <div class="more-blogs-slider-nav">
-          <button class="more-blogs-nav-btn more-blogs-prev-btn" id="moreBlogsPrevBtn">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <div class="more-blogs-slider-dots" id="moreBlogsSliderDots">
-            <span class="more-blogs-dot active" data-slide="0"></span>
-            <span class="more-blogs-dot" data-slide="1"></span>
+        <!-- Blog Card 2 -->
+        <div class="blog-card-wrapper">
+          <div class="blog-card">
+            <div class="blog-image-containers">
+              <img src="./images/moreblog2.png" alt="Accelerator vs Incubator">
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-category-tag">Accelerator vs. Incubator: Which Path Fits Your Idea?</span>
+              <h3 class="blog-title">Understand the differences and select the right program for your venture's
+                stage.</h3>
+              <div class="blog-footer">
+                <div class="blog-meta">
+                  <img src="./images/user2.jpg" alt="Jane Smith" class="blog-author-avatar">
+                  <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
+                </div>
+                <a href="./blog-detail.html" class="common-read-btn">Read more <span>&#8599;</span></a>
+              </div>
+            </div>
           </div>
-          <button class="more-blogs-nav-btn more-blogs-next-btn" id="moreBlogsNextBtn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
         </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card-wrapper">
+          <div class="blog-card">
+            <div class="blog-image-containers">
+              <img src="./images/moreblog3.png" alt="Prototyping Tools">
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-category-tag">Prototyping 101: Essential Tools for Early Stage Founders</span>
+              <h3 class="blog-title">A guide to affordable, effective equipment available at TechDen's
+                fabrication lab.</h3>
+              <div class="blog-footer">
+                <div class="blog-meta">
+                  <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
+                  <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
+                </div>
+                <a href="blog-detail.html" class="common-read-btn">Read more <span>&#8599;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div class="blog-card-wrapper">
+          <div class="blog-card">
+            <div class="blog-image-containers">
+              <img src="./images/moreblog1.png" alt="Funding Strategies">
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-category-tag">Funding Strategies for Hardware Startups</span>
+              <h3 class="blog-title">Navigate the unique challenges of raising capital for physical product
+                development.</h3>
+              <div class="blog-footer">
+                <div class="blog-meta">
+                  <img src="./images/user2.jpg" alt="Jane Smith" class="blog-author-avatar">
+                  <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
+                </div>
+                <a href="blog-detail.html" class="common-read-btn">Read more <span>&#8599;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div class="blog-card-wrapper">
+          <div class="blog-card">
+            <div class="blog-image-containers">
+              <img src="./images/moreblog2.png" alt="Market Validation">
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-category-tag">Market Validation: Testing Your Idea Before You Build</span>
+              <h3 class="blog-title">Learn cost-effective methods to validate your startup concept with real
+                customers.</h3>
+              <div class="blog-footer">
+                <div class="blog-meta">
+                  <img src="./images/user1.jpg" alt="Jane Smith" class="blog-author-avatar">
+                  <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
+                </div>
+                <a href="blog-detail.html" class="common-read-btn">Read more <span>&#8599;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+        <div class="blog-card-wrapper">
+          <div class="blog-card">
+            <div class="blog-image-containers">
+              <img src="./images/moreblog3.png" alt="Team Building">
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-category-tag">Building Your Dream Team: Hiring for Startups</span>
+              <h3 class="blog-title">Strategies for attracting top talent when you're competing with established
+                companies.</h3>
+              <div class="blog-footer">
+                <div class="blog-meta">
+                  <img src="./images/user2.jpg" alt="Jane Smith" class="blog-author-avatar">
+                  <span class="blog-meta-text">By Jane Smith | Nov 2025 | 5 min read</span>
+                </div>
+                <a href="blog-detail.html" class="common-read-btn">Read more <span>&#8599;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Navigation -->
+      <div class="blog-slider-navigation">
+        <button class="blog-nav-btn blog-prev-btn" id="blogPrevBtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="blog-slider-dots" id="blogSliderDots">
+          <!-- Dots will be generated by JavaScript -->
+        </div>
+        <button class="blog-nav-btn blog-next-btn" id="blogNextBtn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   </section>
@@ -405,18 +405,16 @@
   <footer class="footer-section">
     <div class="container">
       <div class="footer-content">
-
-        <!-- Footer Links -->
         <div class="footer-links">
           <div class="footer-column">
             <a href="./index.html" class="footer-link">Home</a>
             <a href="./about.html" class="footer-link">About Us</a>
             <a href="#partners" class="footer-link">Partners</a>
-            <a href="#contact" class="footer-link">Contact Us</a>
+            <a href="./contact.html" class="footer-link">Contact Us</a>
           </div>
           <div class="footer-column">
-            <a href="#facilities" class="footer-link">Facilities</a>
-            <a href="#programs" class="footer-link">Programs</a>
+            <a href="./facilities.html" class="footer-link">Facilities</a>
+            <a href="./programs.html" class="footer-link">Programs</a>
             <a href="#membership" class="footer-link">Membership Plans</a>
             <a href="#tour" class="footer-link">Book a Tour</a>
           </div>
@@ -438,7 +436,9 @@
         </div>
 
         <div class="footer-decoration">
-          <img src="./images/footer-img.png" alt="Footer Decoration" class="img-fluid">
+          <div>
+            <img src="./images/footer-img.png" alt="Footer Decoration" class="img-fluid">
+          </div>
         </div>
       </div>
 
@@ -458,7 +458,13 @@
   <!-- ================= FOOTER SECTION END ================= -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="javascript/more-blogs-slider.js"></script>
+
+  <!-- jQuery & Slick Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- Blog Slider JavaScript -->
+  <script src="javascript/blog-slider.js"></script>
 
 </body>
 
