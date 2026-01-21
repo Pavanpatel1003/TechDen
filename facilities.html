@@ -183,86 +183,17 @@
             <div class="virtual-tour-content">
                 <h2 class="virtual-tour-title">Virtual tour of Our Space</h2>
 
-                <!-- Virtual Tour Viewer -->
-                <div class="virtual-tour-viewer">
-                    <div class="tour-main-image">
-                        <img src="./images/space1.jpg" alt="Virtual Tour Main View" class="tour-image active"
-                            id="tour-image-1">
-                        <img src="./images/space2.jpg" alt="Virtual Tour View 2" class="tour-image" id="tour-image-2">
-                        <img src="./images/space3.jpg" alt="Virtual Tour View 3" class="tour-image" id="tour-image-3">
-                        <img src="./images/space4.jpg" alt="Virtual Tour View 4" class="tour-image" id="tour-image-4">
-                        <img src="./images/meet1.jpg" alt="Virtual Tour View 5" class="tour-image" id="tour-image-5">
-
-                        <!-- Navigation Arrows -->
-                        <button class="tour-nav-btn tour-prev" onclick="previousImage()">
-                            <img src="./images/icon/vprev.png" alt="">
-                        </button>
-                        <button class="tour-nav-btn tour-next" onclick="nextImage()">
-                            <img src="./images/icon/vnext.png" alt="">
-                        </button>
-
-                        <!-- VR Icon -->
-                        <div class="vr-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-
-                        <!-- Fullscreen Icon -->
-                        <div class="fullscreen-icon">
-                            <i class="fas fa-expand"></i>
-                        </div>
-
-                        <!-- Thumbnail Navigation -->
-                        <div class="tour-thumbnails">
-                            <div class="thumbnail-item active" onclick="showImage(1)">
-                                <img src="./images/space1.jpg" alt="Thumbnail 1">
-                            </div>
-                            <div class="thumbnail-item" onclick="showImage(2)">
-                                <img src="./images/space2.jpg" alt="Thumbnail 2">
-                            </div>
-                            <div class="thumbnail-item" onclick="showImage(3)">
-                                <img src="./images/space3.jpg" alt="Thumbnail 3">
-                            </div>
-                            <div class="thumbnail-item" onclick="showImage(4)">
-                                <img src="./images/space4.jpg" alt="Thumbnail 4">
-                            </div>
-                            <div class="thumbnail-item" onclick="showImage(5)">
-                                <img src="./images/meet1.jpg" alt="Thumbnail 5">
-                            </div>
-                        </div>
-
-                        <!-- Dot Navigation -->
-                        <div class="tour-dots" style="display: none;">
-                            <span class="dot active" onclick="showImage(1)"></span>
-                            <span class="dot" onclick="showImage(2)"></span>
-                            <span class="dot" onclick="showImage(3)"></span>
-                            <span class="dot" onclick="showImage(4)"></span>
-                            <span class="dot" onclick="showImage(5)"></span>
-                        </div>
-                    </div>
-
-                    <!-- Navigation Controls Below Image -->
-                    <div class="tour-navigation-controls">
-                        <button class="tour-control-btn tour-control-prev" onclick="previousImage()">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-
-                        <div class="tour-dots-external">
-                            <span class="dot active" onclick="showImage(1)"></span>
-                            <span class="dot" onclick="showImage(2)"></span>
-                            <span class="dot" onclick="showImage(3)"></span>
-                            <span class="dot" onclick="showImage(4)"></span>
-                            <span class="dot" onclick="showImage(5)"></span>
-                        </div>
-
-                        <button class="tour-control-btn tour-control-next" onclick="nextImage()">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
+                <!-- Matterport Virtual Tour Viewer -->
+                <div class="matterport-tour-viewer">
+                    <iframe src="https://my.matterport.com/show/?m=3beVhMuUfDR" width="100%" height="800"
+                        frameborder="0" allowfullscreen
+                        allow="vr; xr-spatial-tracking; accelerometer; magnetometer; gyroscope; fullscreen"
+                        loading="lazy" class="matterport-iframe" title="Virtual Tour">
+                    </iframe>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- ================= MAKERSPACE ADVANTAGE SECTION START ================= -->
     <section class="makerspace-advantage-section">
         <div class="container">
@@ -270,7 +201,8 @@
                 <!-- Section Header -->
                 <div class="makerspace-advantage-header">
                     <h2 class="makerspace-advantage-title">Your Makerspace Advantage</h2>
-                    <p class="makerspace-advantage-subtitle">Access cutting-edge resources every startup needs to test, build, and launch.</p>
+                    <p class="makerspace-advantage-subtitle">Access cutting-edge resources every startup needs to test,
+                        build, and launch.</p>
                 </div>
 
                 <!-- Cards Grid -->
@@ -281,7 +213,8 @@
                             <div class="makerspace-card-number">01</div>
                             <div class="makerspace-card-content">
                                 <h3 class="makerspace-card-title">RF, Antenna & High-Speed Test Labs</h3>
-                                <p class="makerspace-card-description">Rapidly bring ideas to life with high-speed, precision prototyping.</p>
+                                <p class="makerspace-card-description">Rapidly bring ideas to life with high-speed,
+                                    precision prototyping.</p>
                             </div>
                             <div class="makerspace-card-image">
                                 <img src="./images/space1.jpg" alt="RF Test Labs" class="img-fluid">
@@ -299,7 +232,8 @@
                                 <div class="makerspace-card-number">02</div>
                                 <div class="makerspace-card-content">
                                     <h3 class="makerspace-card-title">Advanced Equipment Access</h3>
-                                    <p class="makerspace-card-description">Professional-grade tools and equipment for precision manufacturing.</p>
+                                    <p class="makerspace-card-description">Professional-grade tools and equipment for
+                                        precision manufacturing.</p>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +249,8 @@
                                 <div class="makerspace-card-number">03</div>
                                 <div class="makerspace-card-content">
                                     <h3 class="makerspace-card-title">Collaborative Workspace</h3>
-                                    <p class="makerspace-card-description">Open innovation spaces designed for team collaboration.</p>
+                                    <p class="makerspace-card-description">Open innovation spaces designed for team
+                                        collaboration.</p>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +266,8 @@
                                 <div class="makerspace-card-number">04</div>
                                 <div class="makerspace-card-content">
                                     <h3 class="makerspace-card-title">Clean Room Facilities</h3>
-                                    <p class="makerspace-card-description">Sterile environment for sensitive component development.</p>
+                                    <p class="makerspace-card-description">Sterile environment for sensitive component
+                                        development.</p>
                                 </div>
                             </div>
                         </div>
@@ -402,51 +338,46 @@
 
     <!-- Virtual Tour JavaScript -->
     <script>
-        let currentImageIndex = 1;
-        const totalImages = 5;
-
-        function showImage(index) {
-            // Hide all images
-            for (let i = 1; i <= totalImages; i++) {
-                document.getElementById(`tour-image-${i}`).classList.remove('active');
-                document.querySelectorAll('.thumbnail-item')[i - 1].classList.remove('active');
-
-                // Update both sets of dots
-                document.querySelectorAll('.tour-dots .dot')[i - 1].classList.remove('active');
-                document.querySelectorAll('.tour-dots-external .dot')[i - 1].classList.remove('active');
-            }
-
-            // Show selected image
-            document.getElementById(`tour-image-${index}`).classList.add('active');
-            document.querySelectorAll('.thumbnail-item')[index - 1].classList.add('active');
-
-            // Update both sets of dots
-            document.querySelectorAll('.tour-dots .dot')[index - 1].classList.add('active');
-            document.querySelectorAll('.tour-dots-external .dot')[index - 1].classList.add('active');
-
-            currentImageIndex = index;
+        // Matterport Virtual Tour Handler
+        function openMatterportTour() {
+            // Open Matterport link in new tab
+            const matterportUrl = 'https://my.matterport.com/show/?m=3beVhMuUfDR';
+            window.open(matterportUrl, '_blank');
         }
 
-        function nextImage() {
-            let nextIndex = currentImageIndex + 1;
-            if (nextIndex > totalImages) {
-                nextIndex = 1;
+        // Show preview function for thumbnails
+        function showPreview(imageSrc, title, index) {
+            const mainPreview = document.getElementById('main-preview');
+            const thumbnails = document.querySelectorAll('.thumbnail-item');
+
+            // Update main preview image
+            if (mainPreview) {
+                mainPreview.src = imageSrc;
+                mainPreview.alt = title + ' Preview';
             }
-            showImage(nextIndex);
+
+            // Update active thumbnail
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            if (thumbnails[index - 1]) {
+                thumbnails[index - 1].classList.add('active');
+            }
         }
 
-        function previousImage() {
-            let prevIndex = currentImageIndex - 1;
-            if (prevIndex < 1) {
-                prevIndex = totalImages;
-            }
-            showImage(prevIndex);
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize virtual tour interface
+            console.log('Virtual tour interface initialized');
 
-        // Auto-play functionality (optional)
-        setInterval(() => {
-            nextImage();
-        }, 5000); // Change image every 5 seconds
+            // Add keyboard navigation for accessibility
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    const focusedElement = document.activeElement;
+                    if (focusedElement.classList.contains('tour-3d-btn')) {
+                        e.preventDefault();
+                        openMatterportTour();
+                    }
+                }
+            });
+        });
     </script>
 
 </body>

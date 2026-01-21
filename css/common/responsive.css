@@ -1401,9 +1401,9 @@
 
   /* Hero section navbar overrides for mobile */
 
-  .hero .navbar-nav .nav-link {
+  /* .hero .navbar-nav .nav-link {
     color: #4188FF !important;
-  }
+  } */
 
   .hero .navbar-nav .nav-link:hover {
     color: #2563eb !important;
@@ -3538,6 +3538,146 @@
   .map-type-btn {
     width: 28px;
     height: 28px;
+    font-size: 11px;
+  }
+}
+/* =========================
+   MATTERPORT VIRTUAL TOUR RESPONSIVE STYLES
+========================= */
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  .matterport-tour-viewer {
+    margin-bottom: 40px;
+    border-radius: 16px;
+  }
+
+  .matterport-iframe {
+    height: 400px;
+    border-radius: 16px;
+  }
+
+  .tour-info-overlay {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .tour-info-badge {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .tour-controls-info {
+    font-size: 11px;
+    padding: 6px 12px;
+    max-width: 250px;
+    text-align: left;
+  }
+
+  .tour-features {
+    margin-top: 30px;
+  }
+
+  .tour-feature {
+    padding: 25px 15px;
+    border-radius: 12px;
+  }
+
+  .tour-feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .tour-feature h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tour-feature p {
+    font-size: 13px;
+  }
+}
+
+/* Mobile screens (576px and below) */
+@media (max-width: 576px) {
+  .matterport-tour-viewer {
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+
+  .matterport-iframe {
+    height: 300px;
+    border-radius: 12px;
+  }
+
+  .tour-info-overlay {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .tour-info-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .tour-info-badge i {
+    font-size: 14px;
+  }
+
+  .tour-controls-info {
+    font-size: 10px;
+    padding: 5px 10px;
+    max-width: 200px;
+  }
+
+  .tour-feature {
+    padding: 20px 12px;
+    margin-bottom: 15px;
+  }
+
+  .tour-feature-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .tour-feature h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .tour-feature p {
+    font-size: 12px;
+  }
+}
+
+/* Extra small screens (400px and below) */
+@media (max-width: 400px) {
+  .matterport-iframe {
+    height: 250px;
+  }
+
+  .tour-info-overlay {
+    position: static;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+
+  .tour-feature h4 {
+    font-size: 15px;
+  }
+
+  .tour-feature p {
     font-size: 11px;
   }
 }
